@@ -7,6 +7,12 @@
   <imports />
   <registry>
     <language id="fdef8274-844e-4810-be06-dd00182a0144" name="ArduinoML">
+      <concept id="2581585558387233946" name="ArduinoML.structure.Trigger" flags="ng" index="n8brT">
+        <reference id="2581585558387233949" name="target" index="n8brY" />
+      </concept>
+      <concept id="2581585558387320601" name="ArduinoML.structure.Sensor" flags="ng" index="n9WlU">
+        <property id="2581585558387320604" name="pin" index="n9WlZ" />
+      </concept>
       <concept id="2233559529504279053" name="ArduinoML.structure.Actuator" flags="ng" index="3Udry3">
         <property id="2233559529504279056" name="pin" index="3Udryu" />
       </concept>
@@ -17,9 +23,11 @@
       <concept id="2233559529504279040" name="ArduinoML.structure.State" flags="ng" index="3Udrye">
         <property id="2773480884548941441" name="isInitial" index="2$BliE" />
         <reference id="2233559529504279045" name="next" index="3Udryb" />
+        <child id="2581585558387234014" name="trigger" index="n8bqX" />
         <child id="2233559529504279043" name="actions" index="3Udryd" />
       </concept>
       <concept id="2233559529504279032" name="ArduinoML.structure.App" flags="ng" index="3UdrHQ">
+        <child id="2581585558387409161" name="sensors" index="n9AdE" />
         <child id="2233559529504279037" name="actuators" index="3UdrHN" />
         <child id="2233559529504279035" name="states" index="3UdrHP" />
       </concept>
@@ -32,6 +40,10 @@
   </registry>
   <node concept="3UdrHQ" id="2pXoyI2SdbT">
     <property role="TrG5h" value="LED" />
+    <node concept="n9WlU" id="2fjCAcOXVgO" role="n9AdE">
+      <property role="TrG5h" value="theButton" />
+      <property role="n9WlZ" value="12" />
+    </node>
     <node concept="3Udrye" id="2pXoyI2SdbU" role="3UdrHP">
       <property role="TrG5h" value="on" />
       <property role="2$BliE" value="true" />
@@ -40,6 +52,9 @@
         <property role="3Udry7" value="6zbL0_TG0Li/HIGH" />
         <ref role="3Udry5" node="2pXoyI2SdbW" resolve="theLed" />
       </node>
+      <node concept="n8brT" id="2fjCAcOXVgS" role="n8bqX">
+        <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
+      </node>
     </node>
     <node concept="3Udrye" id="2pXoyI2SdbX" role="3UdrHP">
       <property role="TrG5h" value="off" />
@@ -47,6 +62,9 @@
       <node concept="3Udry6" id="2pXoyI2SdbY" role="3Udryd">
         <property role="3Udry7" value="6zbL0_TG0Lj/LOW" />
         <ref role="3Udry5" node="2pXoyI2SdbW" resolve="theLed" />
+      </node>
+      <node concept="n8brT" id="2fjCAcOYrk8" role="n8bqX">
+        <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
       </node>
     </node>
     <node concept="3Udry3" id="2pXoyI2SdbW" role="3UdrHN">

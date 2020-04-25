@@ -35,12 +35,30 @@ public class State_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("delay(1000);");
     tgs.newLine();
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv) != null)) {
+      tgs.indent();
+      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv));
+      tgs.append(" {");
+      tgs.newLine();
+      ctx.getBuffer().area().increaseIndent();
+      tgs.indent();
+      tgs.append("state_");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.next$X7os), PROPS.name$tAp1));
+      tgs.append("();");
+      tgs.newLine();
+      ctx.getBuffer().area().decreaseIndent();
+      tgs.indent();
+      tgs.append("}");
+      tgs.newLine();
+    }
+    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv) == null)) {
+      tgs.indent();
+      tgs.append("state_");
+      tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.next$X7os), PROPS.name$tAp1));
+      tgs.append("();");
+      tgs.newLine();
 
-    tgs.indent();
-    tgs.append("state_");
-    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.next$X7os), PROPS.name$tAp1));
-    tgs.append("();");
-    tgs.newLine();
+    }
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
     tgs.newLine();
@@ -52,6 +70,7 @@ public class State_TextGen extends TextGenDescriptorBase {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink actions$X7nu = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x1eff328ee4ca8a03L, "actions");
+    /*package*/ static final SContainmentLink trigger$RHyv = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x23d3a26334f314deL, "trigger");
     /*package*/ static final SReferenceLink next$X7os = MetaAdapterFactory.getReferenceLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x1eff328ee4ca8a05L, "next");
   }
 }

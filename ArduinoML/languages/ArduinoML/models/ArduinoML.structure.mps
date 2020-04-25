@@ -77,6 +77,13 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1VZcCV$MCCd" resolve="Actuator" />
     </node>
+    <node concept="1TJgyj" id="2fjCAcOXs49" role="1TKVEi">
+      <property role="IQ2ns" value="2581585558387409161" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sensors" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2fjCAcOX6sp" resolve="Sensor" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1VZcCV$MCC0">
     <property role="EcuMT" value="2233559529504279040" />
@@ -91,6 +98,12 @@
       <property role="20kJfa" value="actions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1VZcCV$MCC8" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="2fjCAcOWLju" role="1TKVEi">
+      <property role="IQ2ns" value="2581585558387234014" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="trigger" />
+      <ref role="20lvS9" node="2fjCAcOWLiq" resolve="Trigger" />
     </node>
     <node concept="1TJgyj" id="1VZcCV$MCC5" role="1TKVEi">
       <property role="IQ2ns" value="2233559529504279045" />
@@ -146,6 +159,35 @@
       <property role="3tVfz5" value="7551344745192098899" />
       <property role="TrG5h" value="LOW" />
       <property role="1L1pqM" value="low" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fjCAcOWLiq">
+    <property role="EcuMT" value="2581585558387233946" />
+    <property role="TrG5h" value="Trigger" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2fjCAcOWLir" role="1TKVEl">
+      <property role="IQ2nx" value="2581585558387233947" />
+      <property role="TrG5h" value="signal" />
+      <ref role="AX2Wp" node="6zbL0_TG0Lh" resolve="SIGNAL" />
+    </node>
+    <node concept="1TJgyj" id="2fjCAcOWLit" role="1TKVEi">
+      <property role="IQ2ns" value="2581585558387233949" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2fjCAcOX6sp" resolve="Sensor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fjCAcOX6sp">
+    <property role="EcuMT" value="2581585558387320601" />
+    <property role="TrG5h" value="Sensor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2fjCAcOX6sq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2fjCAcOX6ss" role="1TKVEl">
+      <property role="IQ2nx" value="2581585558387320604" />
+      <property role="TrG5h" value="pin" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

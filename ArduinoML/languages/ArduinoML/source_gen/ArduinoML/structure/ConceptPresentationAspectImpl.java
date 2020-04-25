@@ -12,7 +12,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
+  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_State;
+  private ConceptPresentation props_Trigger;
 
   @Override
   @Nullable
@@ -40,6 +42,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
+      case LanguageConceptSwitch.Sensor:
+        if (props_Sensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Sensor = cpb.create();
+        }
+        return props_Sensor;
       case LanguageConceptSwitch.State:
         if (props_State == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -47,6 +56,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_State = cpb.create();
         }
         return props_State;
+      case LanguageConceptSwitch.Trigger:
+        if (props_Trigger == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x23d3a26334f3149aL, 0x23d3a26334f3149dL, "target", "", "");
+          props_Trigger = cpb.create();
+        }
+        return props_Trigger;
     }
     return null;
   }

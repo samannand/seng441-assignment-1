@@ -32,6 +32,17 @@ public class App_TextGen extends TextGenDescriptorBase {
     }
     tgs.newLine();
     {
+      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N);
+      final SNode lastItem = Sequence.fromIterable(collection).last();
+      for (SNode item : collection) {
+        tgs.appendNode(item);
+        if (item != lastItem) {
+          tgs.append("\n");
+        }
+      }
+    }
+    tgs.newLine();
+    {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.states$X78Y);
       final SNode lastItem = Sequence.fromIterable(collection).last();
       for (SNode item : collection) {
@@ -52,6 +63,16 @@ public class App_TextGen extends TextGenDescriptorBase {
         tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
         tgs.append(", ");
         tgs.append("OUTPUT);");
+        tgs.newLine();
+      }
+    });
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        tgs.indent();
+        tgs.append("pinMode(");
+        tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
+        tgs.append(", ");
+        tgs.append("INPUT);");
         tgs.newLine();
       }
     });
@@ -80,6 +101,7 @@ public class App_TextGen extends TextGenDescriptorBase {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink actuators$X79W = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fdL, "actuators");
+    /*package*/ static final SContainmentLink sensors$OW5N = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x23d3a26334f5c109L, "sensors");
     /*package*/ static final SContainmentLink states$X78Y = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fbL, "states");
   }
 
