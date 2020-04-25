@@ -37,6 +37,10 @@ public class State_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv) != null)) {
       tgs.indent();
+      tgs.append("while (true) { ");
+      tgs.newLine();
+      ctx.getBuffer().area().increaseIndent();
+      tgs.indent();
       tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv));
       tgs.append(" {");
       tgs.newLine();
@@ -45,6 +49,10 @@ public class State_TextGen extends TextGenDescriptorBase {
       tgs.append("state_");
       tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.next$X7os), PROPS.name$tAp1));
       tgs.append("();");
+      tgs.newLine();
+      ctx.getBuffer().area().decreaseIndent();
+      tgs.indent();
+      tgs.append("}");
       tgs.newLine();
       ctx.getBuffer().area().decreaseIndent();
       tgs.indent();

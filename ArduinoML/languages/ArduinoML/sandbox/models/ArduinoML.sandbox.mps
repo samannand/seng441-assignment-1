@@ -8,6 +8,7 @@
   <registry>
     <language id="fdef8274-844e-4810-be06-dd00182a0144" name="ArduinoML">
       <concept id="2581585558387233946" name="ArduinoML.structure.Trigger" flags="ng" index="n8brT">
+        <property id="2581585558387233947" name="signal" index="n8brS" />
         <reference id="2581585558387233949" name="target" index="n8brY" />
       </concept>
       <concept id="2581585558387320601" name="ArduinoML.structure.Sensor" flags="ng" index="n9WlU">
@@ -42,7 +43,7 @@
     <property role="TrG5h" value="LED" />
     <node concept="n9WlU" id="2fjCAcOXVgO" role="n9AdE">
       <property role="TrG5h" value="theButton" />
-      <property role="n9WlZ" value="12" />
+      <property role="n9WlZ" value="10" />
     </node>
     <node concept="3Udrye" id="2pXoyI2SdbU" role="3UdrHP">
       <property role="TrG5h" value="on" />
@@ -53,6 +54,7 @@
         <ref role="3Udry5" node="2pXoyI2SdbW" resolve="theLed" />
       </node>
       <node concept="n8brT" id="2fjCAcOXVgS" role="n8bqX">
+        <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
       </node>
     </node>
@@ -64,6 +66,7 @@
         <ref role="3Udry5" node="2pXoyI2SdbW" resolve="theLed" />
       </node>
       <node concept="n8brT" id="2fjCAcOYrk8" role="n8bqX">
+        <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
       </node>
     </node>
