@@ -84,6 +84,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2fjCAcOX6sp" resolve="Sensor" />
     </node>
+    <node concept="1TJgyj" id="7Be5SKD6EFM" role="1TKVEi">
+      <property role="IQ2ns" value="8776978614544149234" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sevseg" />
+      <ref role="20lvS9" node="7Be5SKD6q_y" resolve="SevSeg" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1VZcCV$MCC0">
     <property role="EcuMT" value="2233559529504279040" />
@@ -187,6 +193,54 @@
     <node concept="1TJgyi" id="2fjCAcOX6ss" role="1TKVEl">
       <property role="IQ2nx" value="2581585558387320604" />
       <property role="TrG5h" value="pin" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Be5SKD6q_y">
+    <property role="EcuMT" value="8776978614544083298" />
+    <property role="TrG5h" value="SevSeg" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7Be5SKD6q_z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_D" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083305" />
+      <property role="TrG5h" value="pinA" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_F" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083307" />
+      <property role="TrG5h" value="pinB" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_I" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083310" />
+      <property role="TrG5h" value="pinC" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_M" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083314" />
+      <property role="TrG5h" value="pinD" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_R" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083319" />
+      <property role="TrG5h" value="pinE" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6q_X" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083325" />
+      <property role="TrG5h" value="pinF" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6qA4" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083332" />
+      <property role="TrG5h" value="pinG" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7Be5SKD6qAc" role="1TKVEl">
+      <property role="IQ2nx" value="8776978614544083340" />
+      <property role="TrG5h" value="pinD1" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

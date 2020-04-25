@@ -6,7 +6,45 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36c36b58-8fbc-49e9-95c8-bd16fdcb0475" name="Default Changelist" comment="" />
+    <list default="true" id="36c36b58-8fbc-49e9-95c8-bd16fdcb0475" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/SevSeg_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/SevSeg_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$actuatorsListHandler_g38wqt_b2a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$actuatorsListHandler_g38wqt_b2a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$sensorsListHandler_g38wqt_b4a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$sensorsListHandler_g38wqt_b4a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$statesListHandler_g38wqt_b5a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a$statesListHandler_g38wqt_b5a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/App_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/LanguageConceptSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.structure.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/LED/LED.iso" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen/LED/LED.iso" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/App_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/App_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/structure/trace.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +56,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="c8f2cb37-c803-48a6-abc5-1fe083352ee2/r:b7c0a855-6ffc-47c8-ba73-50f5eb56d84f(TempModulec8f2cb37-c803-48a6-abc5-1fe083352ee2/ConsoleModel_58224540054480)">
+            <model ref="72be754b-c1d0-4789-8210-4f76d73db6dc/r:e565e5d7-ac62-4c20-bc0a-c1f1dc17ec6a(TempModule72be754b-c1d0-4789-8210-4f76d73db6dc/ConsoleModel_794036666679300)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -38,11 +76,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2fjCAcOWDR2">
-                <node concept="3balQm" id="2fjCAcOWDR3" role="aymYE" />
-                <node concept="2Clz$F" id="2fjCAcOWDR4" role="aymYO" />
-                <node concept="2_V_lH" id="2fjCAcOWDR5" role="1PhJh3">
-                  <ref role="2_V_lI" node="2fjCAcOWDR4" resolve="CommandHolder" />
+              <node concept="aymSD" id="7Be5SKD5Bo4">
+                <node concept="3balQm" id="7Be5SKD5Bo5" role="aymYE" />
+                <node concept="2Clz$F" id="7Be5SKD5Bo6" role="aymYO" />
+                <node concept="2_V_lH" id="7Be5SKD5Bo7" role="1PhJh3">
+                  <ref role="2_V_lI" node="7Be5SKD5Bo6" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -63,6 +101,9 @@
         <flags show_one_result="true" new_tab="false" />
       </view>
     </search_options>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MPSBookmarkManager">
     <option name="myBookmarkInfos">
@@ -90,6 +131,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZJwdqPioDXPjmRDhsUXxihN3uN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
     <option name="pluginsState">
       <option name="jetbrains.mps.baseLanguage.lightweightdsl.pluginSolution.plugin.PluginSolution_ProjectPlugin">
@@ -161,8 +203,18 @@
               <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:c545a4d1-bf06-4a15-9570-ceda435f4c1d(ArduinoML.editor) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.editor.mps]" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.textGen.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -176,73 +228,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:093c2a0d-c38f-4652-8536-0177a11694c9(ArduinoML.behavior) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2773480884549149176" />
+              <option name="myItemId" value="r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:90b3a159-94f1-4047-9f58-e5916db6f6bd(ArduinoML.typesystem) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.typesystem.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:9a8a9426-8907-4fdb-9992-ba8f6d99208a(ArduinoML.constraints) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b4670aea-49d9-4d40-92c9-46e4b02e8b12" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoML" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,7 +252,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,7 +266,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.textGen.mps]" />
+              <option name="myItemId" value="r:c545a4d1-bf06-4a15-9570-ceda435f4c1d(ArduinoML.editor) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,21 +276,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="b4670aea-49d9-4d40-92c9-46e4b02e8b12" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:093c2a0d-c38f-4652-8536-0177a11694c9(ArduinoML.behavior) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.behavior.mps]" />
+              <option name="myItemId" value="ArduinoML" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -318,19 +300,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="b4670aea-49d9-4d40-92c9-46e4b02e8b12" />
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ArduinoML" />
+              <option name="myItemId" value="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.textGen.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2773480884548981497" />
+              <option name="myItemId" value="7551344745192002230" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -373,6 +351,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="529" y="174" key="#jetbrains.mps.ide.util.NodesChooser/0.23.1440.877@0.23.1440.877" timestamp="1584575017990" />
+    <state x="590" y="115" key="CommitChangelistDialog2" timestamp="1587788829281">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="590" y="115" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587788829281" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1587784909656">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587784909656" />
+    <state x="717" y="234" key="RollbackChangesDialog" timestamp="1587784914554">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="717" y="234" key="RollbackChangesDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587784914554" />
     <state x="229" y="100" key="SettingsEditor" timestamp="1584571763899">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -382,5 +372,9 @@
     </state>
     <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584571787778" />
     <state x="501" y="352" key="com.intellij.ide.util.TipDialog/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1585370090541" />
+    <state x="632" y="323" key="git4idea.merge.GitPullDialog" timestamp="1587784921302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="632" y="323" key="git4idea.merge.GitPullDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587784921302" />
   </component>
 </project>

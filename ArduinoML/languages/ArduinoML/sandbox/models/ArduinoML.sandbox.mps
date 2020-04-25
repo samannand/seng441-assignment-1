@@ -14,6 +14,16 @@
       <concept id="2581585558387320601" name="ArduinoML.structure.Sensor" flags="ng" index="n9WlU">
         <property id="2581585558387320604" name="pin" index="n9WlZ" />
       </concept>
+      <concept id="8776978614544083298" name="ArduinoML.structure.SevSeg" flags="ng" index="1gPVVI">
+        <property id="8776978614544083340" name="pinD1" index="1gPVS0" />
+        <property id="8776978614544083332" name="pinG" index="1gPVS8" />
+        <property id="8776978614544083310" name="pinC" index="1gPVVy" />
+        <property id="8776978614544083305" name="pinA" index="1gPVV_" />
+        <property id="8776978614544083307" name="pinB" index="1gPVVB" />
+        <property id="8776978614544083325" name="pinF" index="1gPVVL" />
+        <property id="8776978614544083319" name="pinE" index="1gPVVV" />
+        <property id="8776978614544083314" name="pinD" index="1gPVVY" />
+      </concept>
       <concept id="2233559529504279053" name="ArduinoML.structure.Actuator" flags="ng" index="3Udry3">
         <property id="2233559529504279056" name="pin" index="3Udryu" />
       </concept>
@@ -29,6 +39,7 @@
       </concept>
       <concept id="2233559529504279032" name="ArduinoML.structure.App" flags="ng" index="3UdrHQ">
         <child id="2581585558387409161" name="sensors" index="n9AdE" />
+        <child id="8776978614544149234" name="sevseg" index="1gPbPY" />
         <child id="2233559529504279037" name="actuators" index="3UdrHN" />
         <child id="2233559529504279035" name="states" index="3UdrHP" />
       </concept>
@@ -73,6 +84,17 @@
     <node concept="3Udry3" id="2pXoyI2SdbW" role="3UdrHN">
       <property role="TrG5h" value="theLed" />
       <property role="3Udryu" value="13" />
+    </node>
+    <node concept="1gPVVI" id="7Be5SKD6TUi" role="1gPbPY">
+      <property role="TrG5h" value="theSeg" />
+      <property role="1gPVV_" value="1" />
+      <property role="1gPVVB" value="2" />
+      <property role="1gPVVy" value="3" />
+      <property role="1gPVVY" value="4" />
+      <property role="1gPVVV" value="5" />
+      <property role="1gPVVL" value="6" />
+      <property role="1gPVS8" value="7" />
+      <property role="1gPVS0" value="8" />
     </node>
   </node>
 </model>

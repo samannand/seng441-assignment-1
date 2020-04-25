@@ -1,18 +1,28 @@
 int theLed = 13;
+int theButton = 10;
 void state_on() {
-  digitalWrite(theLed,high);
-  delay(1000)
-  state_off();
+  digitalWrite(theLed, HIGH);
+  delay(1000);
+  while (true) { 
+    if ( digitalRead(theButton) == LOW ) {
+      state_off();
+    }
+  }
 }
 
 void state_off() {
-  digitalWrite(theLed,low);
-  delay(1000)
-  state_on();
+  digitalWrite(theLed, LOW);
+  delay(1000);
+  while (true) { 
+    if ( digitalRead(theButton) == LOW ) {
+      state_on();
+    }
+  }
 }
 
 void setup() {
-  pinMode(theLed,OUTPUT
+  pinMode(theLed, OUTPUT);
+  pinMode(theButton, INPUT);
 }
 
 void loop() {
