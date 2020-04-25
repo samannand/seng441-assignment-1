@@ -85,8 +85,8 @@
       <property role="TrG5h" value="theLed" />
       <property role="3Udryu" value="13" />
     </node>
-    <node concept="1gPVVI" id="7Be5SKD6TUi" role="1gPbPY">
-      <property role="TrG5h" value="theSeg" />
+    <node concept="1gPVVI" id="2fjCAcP0a4g" role="1gPbPY">
+      <property role="TrG5h" value="theSevSeg" />
       <property role="1gPVV_" value="1" />
       <property role="1gPVVB" value="2" />
       <property role="1gPVVy" value="3" />

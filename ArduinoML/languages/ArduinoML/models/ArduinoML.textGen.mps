@@ -183,6 +183,31 @@
     </node>
     <node concept="11bSqf" id="6zbL0_TFEHO" role="11c4hB">
       <node concept="3clFbS" id="6zbL0_TFEHP" role="2VODD2">
+        <node concept="3clFbJ" id="5e4cH7JsD$6" role="3cqZAp">
+          <node concept="3clFbS" id="5e4cH7JsD$8" role="3clFbx">
+            <node concept="lc7rE" id="5e4cH7JsEzU" role="3cqZAp">
+              <node concept="la8eA" id="5e4cH7JsE$i" role="lcghm">
+                <property role="lacIc" value="#include &quot;SevSeg.h&quot;" />
+              </node>
+              <node concept="l8MVK" id="5e4cH7JsEA7" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="5e4cH7JsEAL" role="3cqZAp">
+              <node concept="la8eA" id="5e4cH7JsEBc" role="lcghm">
+                <property role="lacIc" value="SevSeg sevseg;" />
+              </node>
+              <node concept="l8MVK" id="5e4cH7JsEDI" role="lcghm" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5e4cH7JsEli" role="3clFbw">
+            <node concept="2OqwBi" id="5e4cH7JsDR1" role="2Oq$k0">
+              <node concept="117lpO" id="5e4cH7JsDIb" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5e4cH7JsE0y" role="2OqNvi">
+                <ref role="3Tt5mk" to="gb5d:7Be5SKD6EFM" resolve="sevseg" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5e4cH7JsEv$" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="lc7rE" id="6zbL0_TFEXA" role="3cqZAp">
           <node concept="l9S2W" id="6zbL0_TFEXW" role="lcghm">
             <property role="XA4eZ" value="true" />
@@ -236,6 +261,31 @@
         </node>
         <node concept="3izx1p" id="6zbL0_TFIle" role="3cqZAp">
           <node concept="3clFbS" id="6zbL0_TFIlg" role="3izTki">
+            <node concept="3clFbH" id="5e4cH7JsEE4" role="3cqZAp" />
+            <node concept="3clFbJ" id="5e4cH7JsF26" role="3cqZAp">
+              <node concept="3clFbS" id="5e4cH7JsF28" role="3clFbx">
+                <node concept="lc7rE" id="5e4cH7JsFOj" role="3cqZAp">
+                  <node concept="l9hG8" id="5e4cH7JsFOU" role="lcghm">
+                    <node concept="2OqwBi" id="5e4cH7JsG0y" role="lb14g">
+                      <node concept="117lpO" id="5e4cH7JsFPK" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="5e4cH7JsGaA" role="2OqNvi">
+                        <ref role="3Tt5mk" to="gb5d:7Be5SKD6EFM" resolve="sevseg" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5e4cH7JsFA0" role="3clFbw">
+                <node concept="2OqwBi" id="5e4cH7JsFh6" role="2Oq$k0">
+                  <node concept="117lpO" id="5e4cH7JsF8g" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5e4cH7JsFqU" role="2OqNvi">
+                    <ref role="3Tt5mk" to="gb5d:7Be5SKD6EFM" resolve="sevseg" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="5e4cH7JsFJX" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="5e4cH7JsEQc" role="3cqZAp" />
             <node concept="3clFbF" id="6zbL0_TFIm3" role="3cqZAp">
               <node concept="2OqwBi" id="6zbL0_TFK0W" role="3clFbG">
                 <node concept="2OqwBi" id="6zbL0_TFIsJ" role="2Oq$k0">
@@ -715,12 +765,14 @@
     <ref role="WuzLi" to="gb5d:7Be5SKD6q_y" resolve="SevSeg" />
     <node concept="11bSqf" id="7Be5SKD6VeM" role="11c4hB">
       <node concept="3clFbS" id="7Be5SKD6VeN" role="2VODD2">
+        <node concept="1bpajm" id="5e4cH7Jt6aC" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD6W3i" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD6W3C" role="lcghm">
-            <property role="lacIc" value="byte numDigits = 4;" />
+            <property role="lacIc" value="byte numDigits = 2;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD6WKw" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt6rp" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD6W7M" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD6WKQ" role="lcghm">
             <property role="lacIc" value="byte digitPins[] = {" />
@@ -742,6 +794,7 @@
           </node>
           <node concept="l8MVK" id="7Be5SKD70th" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt6Gc" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD70vU" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD70xm" role="lcghm">
             <property role="lacIc" value="byte segmentPins[] = {" />
@@ -853,40 +906,33 @@
           </node>
           <node concept="l8MVK" id="7Be5SKD78eD" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt7D_" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD78uN" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD78B4" role="lcghm">
-            <property role="lacIc" value="bool resistorsOnSegments = false;" />
+            <property role="lacIc" value="bool resistorsOnSegments = true;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD79Cs" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt7Us" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD79RZ" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD7a7G" role="lcghm">
-            <property role="lacIc" value="byte hardwareConfig = COMMON_ANODE;" />
+            <property role="lacIc" value="byte hardwareConfig = COMMON_CATHODE;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD7b9H" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="7Be5SKD7bpj" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7bxE" role="lcghm">
-            <property role="lacIc" value="bool updateWith = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7dC2" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7Be5SKD7dRF" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7e05" role="lcghm">
-            <property role="lacIc" value="bool leadingZeros = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7f1p" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7Be5SKD7fh5" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7fpy" role="lcghm">
-            <property role="lacIc" value="bool disableDecPoint = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7grP" role="lcghm" />
-        </node>
+        <node concept="1bpajm" id="5e4cH7Jt8bl" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD7gF$" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD7gO4" role="lcghm">
-            <property role="lacIc" value="sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments, updateWithDelays, leadingZeros, disableDecPoint);" />
+            <property role="lacIc" value="sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);" />
           </node>
+          <node concept="l8MVK" id="5e4cH7JskIo" role="lcghm" />
+        </node>
+        <node concept="1bpajm" id="5e4cH7Jt98O" role="3cqZAp" />
+        <node concept="lc7rE" id="5e4cH7JsiWQ" role="3cqZAp">
+          <node concept="la8eA" id="5e4cH7Jsj5f" role="lcghm">
+            <property role="lacIc" value="sevseg.setBrightness(50);" />
+          </node>
+          <node concept="l8MVK" id="5e4cH7Jskf2" role="lcghm" />
         </node>
       </node>
     </node>

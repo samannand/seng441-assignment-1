@@ -7,18 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c36b58-8fbc-49e9-95c8-bd16fdcb0475" name="Default Changelist" comment="Started sevseg suport">
-      <change afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/SevSeg_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/SevSeg_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/SevSeg_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/SevSeg_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/SevSeg_TextGen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/classes_gen/ArduinoML/textGen/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/source_gen.caches/ArduinoML/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/models/ArduinoML.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/textGen/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen.caches/ArduinoML/textGen/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/App_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/App_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/SevSeg_TextGen.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ArduinoML/source_gen/ArduinoML/textGen/trace.info" afterDir="false" />
     </list>
@@ -33,7 +32,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="72be754b-c1d0-4789-8210-4f76d73db6dc/r:e565e5d7-ac62-4c20-bc0a-c1f1dc17ec6a(TempModule72be754b-c1d0-4789-8210-4f76d73db6dc/ConsoleModel_794036666679300)">
+            <model ref="2a45a6f1-0f84-4eb9-8490-b64ecfca8d86/r:74cc8ed1-c4c2-4655-930f-56f2da19cb60(TempModule2a45a6f1-0f84-4eb9-8490-b64ecfca8d86/ConsoleModel_68034244285644)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -53,11 +52,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="7Be5SKD5Bo4">
-                <node concept="3balQm" id="7Be5SKD5Bo5" role="aymYE" />
-                <node concept="2Clz$F" id="7Be5SKD5Bo6" role="aymYO" />
-                <node concept="2_V_lH" id="7Be5SKD5Bo7" role="1PhJh3">
-                  <ref role="2_V_lI" node="7Be5SKD5Bo6" resolve="CommandHolder" />
+              <node concept="aymSD" id="5e4cH7Jsbji">
+                <node concept="3balQm" id="5e4cH7Jsbjj" role="aymYE" />
+                <node concept="2Clz$F" id="5e4cH7Jsbjk" role="aymYO" />
+                <node concept="2_V_lH" id="5e4cH7Jsbjl" role="1PhJh3">
+                  <ref role="2_V_lI" node="5e4cH7Jsbjk" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -169,6 +168,50 @@
   <component name="ProjectView">
     <navigator proportions="" version="1" />
     <panes>
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,55 +220,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c545a4d1-bf06-4a15-9570-ceda435f4c1d(ArduinoML.editor) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="b4670aea-49d9-4d40-92c9-46e4b02e8b12" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.textGen.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,7 +248,35 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: C:/Users/Jack/MPSProjects/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.textGen.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:c545a4d1-bf06-4a15-9570-ceda435f4c1d(ArduinoML.editor) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,6 +291,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ArduinoML" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fdef8274-844e-4810-be06-dd00182a0144(ArduinoML)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:9a8a9426-8907-4fdb-9992-ba8f6d99208a(ArduinoML.constraints) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/models/ArduinoML.constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,10 +333,25 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b4670aea-49d9-4d40-92c9-46e4b02e8b12" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArduinoML" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:6c1a8c13-8194-4155-9de5-89d83e3495f8(ArduinoML.sandbox) in IdeaFile[path: /Users/samannand/Desktop/seng441-assignment-1/ArduinoML/languages/ArduinoML/sandbox/models/ArduinoML.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2773480884548981497" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -320,10 +392,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="590" y="115" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587789278314" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1587784909656">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="184" y="110" key="DiffContextDialog" timestamp="1587789550020">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1587784909656" />
+    <state x="184" y="110" key="DiffContextDialog/1920.203.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587789550020" />
     <state x="717" y="234" key="RollbackChangesDialog" timestamp="1587784914554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
