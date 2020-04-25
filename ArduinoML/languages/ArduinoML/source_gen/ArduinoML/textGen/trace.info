@@ -13,15 +13,15 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="65,0,68,0" name="ArduinoML.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="69,0,72,0" name="ArduinoML.textGen.TextGenAspectDescriptor$PROPS" />
-      <unit at="18,0,73,0" name="ArduinoML.textGen.TextGenAspectDescriptor" />
+      <unit at="67,0,70,0" name="ArduinoML.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="71,0,74,0" name="ArduinoML.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,75,0" name="ArduinoML.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen)/2581585558387314951">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2581585558387314951" at="38,41,39,37" concept="7" />
-      <scope id="2581585558387314951" at="38,41,39,37" />
+      <node id="2581585558387314951" at="40,41,41,37" concept="7" />
+      <scope id="2581585558387314951" at="40,41,41,37" />
     </file>
     <file name="Trigger_TextGen.java">
       <node id="2581585558387314951" at="17,54,18,55" concept="6" />
@@ -220,31 +220,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="7551344745192002230" at="32,37,33,33" concept="7" />
-      <node id="7551344745192002230" at="47,54,48,45" concept="6" />
-      <node id="7551344745192002230" at="48,45,49,48" concept="6" />
-      <node id="7551344745192002230" at="49,48,50,103" concept="2" />
-      <node id="7551344745192002230" at="50,103,51,17" concept="1" />
-      <node id="7551344745192002230" at="55,53,56,26" concept="7" />
-      <node id="7551344745192008495" at="58,58,59,17" concept="7" />
-      <node id="7551344745192002624" at="61,49,62,88" concept="7" />
-      <node id="7551344745192002230" at="55,0,58,0" concept="10" trace="getFileName_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7551344745192002230" at="58,0,61,0" concept="10" trace="getFileExtension_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7551344745192002230" at="61,0,64,0" concept="10" trace="getPath_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7551344745192002230" at="46,58,52,7" concept="4" />
+      <node id="7551344745192002230" at="49,54,50,45" concept="6" />
+      <node id="7551344745192002230" at="50,45,51,48" concept="6" />
+      <node id="7551344745192002230" at="51,48,52,103" concept="2" />
+      <node id="7551344745192002230" at="52,103,53,17" concept="1" />
+      <node id="7551344745192002230" at="57,53,58,26" concept="7" />
+      <node id="7551344745192008495" at="60,58,61,17" concept="7" />
+      <node id="7551344745192002624" at="63,49,64,88" concept="7" />
+      <node id="7551344745192002230" at="57,0,60,0" concept="10" trace="getFileName_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7551344745192002230" at="60,0,63,0" concept="10" trace="getFileExtension_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7551344745192002230" at="63,0,66,0" concept="10" trace="getPath_App#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7551344745192002230" at="48,58,54,7" concept="4" />
       <scope id="7551344745192002230" at="32,37,33,33" />
-      <scope id="7551344745192002230" at="55,53,56,26" />
-      <scope id="7551344745192002230" at="58,58,59,17" />
-      <scope id="7551344745192002230" at="61,49,62,88" />
-      <scope id="7551344745192002230" at="55,0,58,0">
+      <scope id="7551344745192002230" at="57,53,58,26" />
+      <scope id="7551344745192002230" at="60,58,61,17" />
+      <scope id="7551344745192002230" at="63,49,64,88" />
+      <scope id="7551344745192002230" at="57,0,60,0">
         <var name="node" id="7551344745192002230" />
       </scope>
-      <scope id="7551344745192002230" at="58,0,61,0">
+      <scope id="7551344745192002230" at="60,0,63,0">
         <var name="node" id="7551344745192002230" />
       </scope>
-      <scope id="7551344745192002230" at="61,0,64,0">
+      <scope id="7551344745192002230" at="63,0,66,0">
         <var name="node" id="7551344745192002230" />
       </scope>
-      <scope id="7551344745192002230" at="47,54,51,17">
+      <scope id="7551344745192002230" at="49,54,53,17">
         <var name="ext" id="7551344745192002230" />
         <var name="fname" id="7551344745192002230" />
       </scope>
@@ -350,8 +350,67 @@
       <unit id="7551344745192131918" at="18,0,85,0" name="ArduinoML.textGen.State_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7551344745192131918" at="36,39,37,35" concept="7" />
-      <scope id="7551344745192131918" at="36,39,37,35" />
+      <node id="7551344745192131918" at="38,39,39,35" concept="7" />
+      <scope id="7551344745192131918" at="38,39,39,35" />
+    </file>
+  </root>
+  <root nodeRef="r:aac31bfe-908d-42ab-98d0-73049ac049e5(ArduinoML.textGen)/8776978614544213730">
+    <file name="SevSeg_TextGen.java">
+      <node id="8776978614544213730" at="14,54,15,55" concept="6" />
+      <node id="8776978614544220392" at="15,55,16,38" concept="2" />
+      <node id="8776978614544223264" at="16,38,17,18" concept="2" />
+      <node id="8776978614544223286" at="17,18,18,39" concept="2" />
+      <node id="8776978614544223448" at="18,39,19,104" concept="2" />
+      <node id="8776978614544238233" at="19,104,20,21" concept="2" />
+      <node id="8776978614544238417" at="20,21,21,18" concept="2" />
+      <node id="8776978614544238678" at="21,18,22,41" concept="2" />
+      <node id="8776978614544238922" at="22,41,23,103" concept="2" />
+      <node id="8776978614544244193" at="23,103,24,21" concept="2" />
+      <node id="8776978614544244347" at="24,21,25,103" concept="2" />
+      <node id="8776978614544248910" at="25,103,26,21" concept="2" />
+      <node id="8776978614544249342" at="26,21,27,103" concept="2" />
+      <node id="8776978614544253269" at="27,103,28,21" concept="2" />
+      <node id="8776978614544253810" at="28,21,29,103" concept="2" />
+      <node id="8776978614544255504" at="29,103,30,21" concept="2" />
+      <node id="8776978614544256169" at="30,21,31,103" concept="2" />
+      <node id="8776978614544257227" at="31,103,32,21" concept="2" />
+      <node id="8776978614544261171" at="32,21,33,103" concept="2" />
+      <node id="8776978614544263178" at="33,103,34,21" concept="2" />
+      <node id="8776978614544263657" at="34,21,35,103" concept="2" />
+      <node id="8776978614544265013" at="35,103,36,21" concept="2" />
+      <node id="8776978614544270249" at="36,21,37,18" concept="2" />
+      <node id="8776978614544271812" at="37,18,38,52" concept="2" />
+      <node id="8776978614544275996" at="38,52,39,18" concept="2" />
+      <node id="8776978614544277996" at="39,18,40,54" concept="2" />
+      <node id="8776978614544282221" at="40,54,41,18" concept="2" />
+      <node id="8776978614544283754" at="41,18,42,43" concept="2" />
+      <node id="8776978614544292354" at="42,43,43,18" concept="2" />
+      <node id="8776978614544293893" at="43,18,44,45" concept="2" />
+      <node id="8776978614544298073" at="44,45,45,18" concept="2" />
+      <node id="8776978614544299618" at="45,18,46,48" concept="2" />
+      <node id="8776978614544303861" at="46,48,47,18" concept="2" />
+      <node id="8776978614544305412" at="47,18,48,153" concept="2" />
+      <node id="8776978614544213730" at="52,0,53,0" concept="9" trace="pinD1$QfKz" />
+      <node id="8776978614544213730" at="53,0,54,0" concept="9" trace="pinA$QeQU" />
+      <node id="8776978614544213730" at="54,0,55,0" concept="9" trace="pinB$QeRS" />
+      <node id="8776978614544213730" at="55,0,56,0" concept="9" trace="pinC$Qf3w" />
+      <node id="8776978614544213730" at="56,0,57,0" concept="9" trace="pinD$Qf5s" />
+      <node id="8776978614544213730" at="57,0,58,0" concept="9" trace="pinE$Qf7R" />
+      <node id="8776978614544213730" at="58,0,59,0" concept="9" trace="pinF$QfkW" />
+      <node id="8776978614544213730" at="59,0,60,0" concept="9" trace="pinG$Qfyw" />
+      <node id="8776978614544213730" at="13,0,50,0" concept="5" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8776978614544213730" at="14,54,48,153">
+        <var name="tgs" id="8776978614544213730" />
+      </scope>
+      <scope id="8776978614544213730" at="13,0,50,0">
+        <var name="ctx" id="8776978614544213730" />
+      </scope>
+      <unit id="8776978614544213730" at="51,0,61,0" name="ArduinoML.textGen.SevSeg_TextGen$PROPS" />
+      <unit id="8776978614544213730" at="12,0,62,0" name="ArduinoML.textGen.SevSeg_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8776978614544213730" at="36,40,37,36" concept="7" />
+      <scope id="8776978614544213730" at="36,40,37,36" />
     </file>
   </root>
 </debug-info>

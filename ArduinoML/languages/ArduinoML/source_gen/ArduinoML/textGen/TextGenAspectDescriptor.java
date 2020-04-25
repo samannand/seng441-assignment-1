@@ -33,6 +33,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new App_TextGen();
       case LanguageConceptSwitch.Sensor:
         return new Sensor_TextGen();
+      case LanguageConceptSwitch.SevSeg:
+        return new SevSeg_TextGen();
       case LanguageConceptSwitch.State:
         return new State_TextGen();
       case LanguageConceptSwitch.Trigger:
