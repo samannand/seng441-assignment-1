@@ -1,0 +1,21 @@
+int theLed = 13;
+void state_on() {
+  digitalWrite(theLed,high);
+  delay(1000)
+  state_off();
+}
+
+void state_off() {
+  digitalWrite(theLed,low);
+  delay(1000)
+  state_on();
+}
+
+void setup() {
+  pinMode(theLed,OUTPUT
+}
+
+void loop() {
+  state_on();
+  return 0;
+}
