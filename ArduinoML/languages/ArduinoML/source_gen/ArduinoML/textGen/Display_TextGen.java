@@ -45,10 +45,12 @@ public class Display_TextGen extends TextGenDescriptorBase {
     tgs.append("byte hardwareConfig = COMMON_CATHODE;");
     tgs.newLine();
     tgs.indent();
-    tgs.append("sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$tAp1));
+    tgs.append(".begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);");
     tgs.newLine();
     tgs.indent();
-    tgs.append("sevseg.setBrightness(50);");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$tAp1));
+    tgs.append(".setBrightness(50);");
     tgs.newLine();
   }
 
@@ -61,5 +63,6 @@ public class Display_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SProperty pinE$Qf7R = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a977L, "pinE");
     /*package*/ static final SProperty pinF$QfkW = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a97dL, "pinF");
     /*package*/ static final SProperty pinG$Qfyw = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a984L, "pinG");
+    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

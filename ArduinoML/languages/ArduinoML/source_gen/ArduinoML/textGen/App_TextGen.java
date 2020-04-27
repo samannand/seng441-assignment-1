@@ -10,13 +10,13 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -24,17 +24,25 @@ public class App_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
-          tgs.append("LED");
-        }
         if (SNodeOperations.isInstanceOf(it, CONCEPTS.Display$r3)) {
-          tgs.append("Display");
+          tgs.append("#include \"SevSeg.h\"");
+          tgs.newLine();
+          tgs.append("SevSeg ");
+          tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
+          tgs.newLine();
+          return;
         }
-
       }
     });
 
-    tgs.newLine();
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
+          tgs.appendNode(it);
+          tgs.newLine();
+        }
+      }
+    });
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N);
       final SNode lastItem = Sequence.fromIterable(collection).last();
@@ -60,16 +68,20 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("void setup() {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-
-
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        tgs.indent();
-        tgs.append("pinMode(");
-        tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
-        tgs.append(", ");
-        tgs.append("OUTPUT);");
-        tgs.newLine();
+        if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
+          tgs.indent();
+          tgs.append("pinMode(");
+          tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
+          tgs.append(", ");
+          tgs.append("OUTPUT);");
+          tgs.newLine();
+        }
+        if (SNodeOperations.isInstanceOf(it, CONCEPTS.Display$r3)) {
+          tgs.appendNode(it);
+        }
+
       }
     });
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N)).visitAll(new IVisitor<SNode>() {
@@ -111,13 +123,13 @@ public class App_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SContainmentLink states$X78Y = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fbL, "states");
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept LED$j3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, "ArduinoML.structure.LED");
-    /*package*/ static final SConcept Display$r3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, "ArduinoML.structure.Display");
-  }
-
   private static final class PROPS {
     /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty isInitial$l444 = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x267d622b82e03681L, "isInitial");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Display$r3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, "ArduinoML.structure.Display");
+    /*package*/ static final SConcept LED$j3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, "ArduinoML.structure.LED");
   }
 }
