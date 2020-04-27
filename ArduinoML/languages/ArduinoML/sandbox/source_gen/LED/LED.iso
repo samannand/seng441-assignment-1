@@ -1,8 +1,9 @@
 int theLed = 13;
+
 int theButton = 10;
 void state_on() {
-  digitalWrite(theLed, HIGH);
   delay(1000);
+  digitalWrite(theLed, HIGH);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {
       state_off();
@@ -11,8 +12,8 @@ void state_on() {
 }
 
 void state_off() {
-  digitalWrite(theLed, LOW);
   delay(1000);
+  digitalWrite(theLed, LOW);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {
       state_on();

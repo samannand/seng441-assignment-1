@@ -34,6 +34,7 @@
         <property id="8776978614544083325" name="pinF" index="1gPVVL" />
         <property id="8776978614544083319" name="pinE" index="1gPVVV" />
         <property id="8776978614544083314" name="pinD" index="1gPVVY" />
+        <property id="1538393239983271888" name="pinD2" index="1nittg" />
       </concept>
       <concept id="2233559529504279040" name="ArduinoML.structure.State" flags="ng" index="3Udrye">
         <property id="2773480884548941441" name="isInitial" index="2$BliE" />
@@ -95,7 +96,7 @@
       <property role="n9WlZ" value="10" />
     </node>
     <node concept="1gPVVI" id="oyXW5cnS2H" role="3UdrHN">
-      <property role="TrG5h" value="display" />
+      <property role="TrG5h" value="sevseg" />
       <property role="1gPVV_" value="1" />
       <property role="1gPVVB" value="2" />
       <property role="1gPVVy" value="3" />
@@ -104,17 +105,7 @@
       <property role="1gPVVL" value="6" />
       <property role="1gPVS8" value="7" />
       <property role="1gPVS0" value="8" />
-    </node>
-    <node concept="1gPVVI" id="3iSCY2CWQOn" role="3UdrHN">
-      <property role="TrG5h" value="displayTwo" />
-      <property role="1gPVV_" value="1" />
-      <property role="1gPVVB" value="2" />
-      <property role="1gPVVy" value="3" />
-      <property role="1gPVVY" value="4" />
-      <property role="1gPVVV" value="5" />
-      <property role="1gPVVL" value="6" />
-      <property role="1gPVS8" value="7" />
-      <property role="1gPVS0" value="8" />
+      <property role="1nittg" value="9" />
     </node>
     <node concept="3Udrye" id="oyXW5cnS2v" role="3UdrHP">
       <property role="TrG5h" value="zero" />
@@ -126,7 +117,7 @@
       </node>
       <node concept="1au9bm" id="3iSCY2CSI49" role="3Udryd">
         <property role="1auj1I" value="0" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="display" />
+        <ref role="1av$J1" node="oyXW5cnS2H" resolve="sevseg" />
       </node>
     </node>
     <node concept="3Udrye" id="oyXW5co85q" role="3UdrHP">
@@ -134,7 +125,7 @@
       <ref role="3Udryb" node="oyXW5cnS2v" resolve="zero" />
       <node concept="1au9bm" id="oyXW5co85x" role="3Udryd">
         <property role="1auj1I" value="1" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="display" />
+        <ref role="1av$J1" node="oyXW5cnS2H" resolve="sevseg" />
       </node>
       <node concept="n8brT" id="oyXW5co85$" role="n8bqX">
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />

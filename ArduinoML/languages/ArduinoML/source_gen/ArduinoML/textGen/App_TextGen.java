@@ -29,12 +29,11 @@ public class App_TextGen extends TextGenDescriptorBase {
           tgs.newLine();
           tgs.append("SevSeg ");
           tgs.append(SPropertyOperations.getString(it, PROPS.name$tAp1));
+          tgs.append(";");
           tgs.newLine();
-          return;
         }
       }
     });
-
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
@@ -43,6 +42,7 @@ public class App_TextGen extends TextGenDescriptorBase {
         }
       }
     });
+    tgs.newLine();
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N);
       final SNode lastItem = Sequence.fromIterable(collection).last();

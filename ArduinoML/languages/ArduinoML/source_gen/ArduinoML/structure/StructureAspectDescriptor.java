@@ -124,6 +124,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("pinF", 0x79ce178c2919a97dL).type(PrimitiveTypeId.INTEGER).origin("8776978614544083325").done();
     b.property("pinG", 0x79ce178c2919a984L).type(PrimitiveTypeId.INTEGER).origin("8776978614544083332").done();
     b.property("pinD1", 0x79ce178c2919a98cL).type(PrimitiveTypeId.INTEGER).origin("8776978614544083340").done();
+    b.property("pinD2", 0x155978804210afd0L).type(PrimitiveTypeId.INTEGER).origin("1538393239983271888").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDisplayAction() {

@@ -224,6 +224,11 @@
       <property role="TrG5h" value="pinD1" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="1lpu8124aZg" role="1TKVEl">
+      <property role="IQ2nx" value="1538393239983271888" />
+      <property role="TrG5h" value="pinD2" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="oyXW5cmAkn">
     <property role="EcuMT" value="442188123017471255" />

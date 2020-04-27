@@ -20,6 +20,7 @@ public class DisplayAction_TextGen extends TextGenDescriptorBase {
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.number$rYC8)));
     tgs.append(");");
     tgs.newLine();
+    tgs.indent();
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.target$Ckt9), PROPS.name$tAp1));
     tgs.append(".refreshDisplay();");
   }

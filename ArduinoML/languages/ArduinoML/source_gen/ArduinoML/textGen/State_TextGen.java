@@ -10,10 +10,12 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class State_TextGen extends TextGenDescriptorBase {
   @Override
@@ -24,6 +26,10 @@ public class State_TextGen extends TextGenDescriptorBase {
     tgs.append("() {");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("delay(1000);");
+    tgs.newLine();
+
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actions$X7nu)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         tgs.indent();
@@ -32,14 +38,21 @@ public class State_TextGen extends TextGenDescriptorBase {
       }
     });
 
-    tgs.indent();
-    tgs.append("delay(1000);");
-    tgs.newLine();
     if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv) != null)) {
       tgs.indent();
       tgs.append("while (true) { ");
       tgs.newLine();
       ctx.getBuffer().area().increaseIndent();
+      ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actions$X7nu)).visitAll(new IVisitor<SNode>() {
+        public void visit(SNode it) {
+
+          if (SNodeOperations.isInstanceOf(it, CONCEPTS.DisplayAction$mU)) {
+            tgs.indent();
+            tgs.appendNode(it);
+            tgs.newLine();
+          }
+        }
+      });
       tgs.indent();
       tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.trigger$RHyv));
       tgs.append(" {");
@@ -80,5 +93,9 @@ public class State_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SContainmentLink actions$X7nu = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x1eff328ee4ca8a03L, "actions");
     /*package*/ static final SContainmentLink trigger$RHyv = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x23d3a26334f314deL, "trigger");
     /*package*/ static final SReferenceLink next$X7os = MetaAdapterFactory.getReferenceLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L, 0x1eff328ee4ca8a05L, "next");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept DisplayAction$mU = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5a6517L, "ArduinoML.structure.DisplayAction");
   }
 }

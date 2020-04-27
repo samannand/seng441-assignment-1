@@ -18,6 +18,8 @@ public class Display_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("byte digitPins[] = {");
+    tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.pinD2$fguj)));
+    tgs.append(", ");
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.pinD1$QfKz)));
     tgs.append("};");
     tgs.newLine();
@@ -55,6 +57,7 @@ public class Display_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty pinD2$fguj = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x155978804210afd0L, "pinD2");
     /*package*/ static final SProperty pinD1$QfKz = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a98cL, "pinD1");
     /*package*/ static final SProperty pinA$QeQU = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a969L, "pinA");
     /*package*/ static final SProperty pinB$QeRS = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, 0x79ce178c2919a96bL, "pinB");
