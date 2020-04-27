@@ -8,7 +8,8 @@ sevseg.setBrightness(50);
 
 int theButton = 10;
 void state_zero() {
-  sevseg.SetNumber(0);
+  .setNumber(0);
+.refreshDisplay();
   delay(1000);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {
@@ -18,7 +19,8 @@ void state_zero() {
 }
 
 void state_one() {
-  sevseg.SetNumber(1);
+  .setNumber(1);
+.refreshDisplay();
   delay(1000);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {
@@ -28,7 +30,7 @@ void state_one() {
 }
 
 void setup() {
-  pinMode(theSevSeg, OUTPUT);
+  pinMode(display, OUTPUT);
   pinMode(theButton, INPUT);
 }
 

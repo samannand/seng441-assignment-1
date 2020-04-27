@@ -132,7 +132,7 @@
     <property role="TrG5h" value="Actuator" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3iSCY2CRyfO" role="PzmwI">
+    <node concept="PrWs8" id="3iSCY2CTbzU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -182,11 +182,8 @@
   </node>
   <node concept="1TIwiD" id="7Be5SKD6q_y">
     <property role="EcuMT" value="8776978614544083298" />
-    <property role="TrG5h" value="SevSeg" />
+    <property role="TrG5h" value="Display" />
     <ref role="1TJDcQ" node="1VZcCV$MCCd" resolve="Actuator" />
-    <node concept="PrWs8" id="7Be5SKD6q_z" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="7Be5SKD6q_D" role="1TKVEl">
       <property role="IQ2nx" value="8776978614544083305" />
       <property role="TrG5h" value="pinA" />
@@ -230,7 +227,7 @@
   </node>
   <node concept="1TIwiD" id="oyXW5cmAkn">
     <property role="EcuMT" value="442188123017471255" />
-    <property role="TrG5h" value="SevSegAction" />
+    <property role="TrG5h" value="DisplayAction" />
     <ref role="1TJDcQ" node="1VZcCV$MCC8" resolve="Action" />
     <node concept="PrWs8" id="oyXW5cmWuG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -243,7 +240,7 @@
     <node concept="1TJgyj" id="oyXW5cnbK0" role="1TKVEi">
       <property role="IQ2ns" value="442188123017624576" />
       <property role="20kJfa" value="target" />
-      <ref role="20lvS9" node="7Be5SKD6q_y" resolve="SevSeg" />
+      <ref role="20lvS9" node="7Be5SKD6q_y" resolve="Display" />
     </node>
   </node>
   <node concept="1TIwiD" id="oyXW5cnbN5">

@@ -738,7 +738,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="7Be5SKD6Ury">
-    <ref role="WuzLi" to="gb5d:7Be5SKD6q_y" resolve="SevSeg" />
+    <ref role="WuzLi" to="gb5d:7Be5SKD6q_y" resolve="Display" />
     <node concept="11bSqf" id="7Be5SKD6VeM" role="11c4hB">
       <node concept="3clFbS" id="7Be5SKD6VeN" role="2VODD2">
         <node concept="1bpajm" id="5e4cH7Jt6aC" role="3cqZAp" />
@@ -914,12 +914,20 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="oyXW5cob6N">
-    <ref role="WuzLi" to="gb5d:oyXW5cmAkn" resolve="SevSegAction" />
+    <ref role="WuzLi" to="gb5d:oyXW5cmAkn" resolve="DisplayAction" />
     <node concept="11bSqf" id="oyXW5cob6O" role="11c4hB">
       <node concept="3clFbS" id="oyXW5cob6P" role="2VODD2">
         <node concept="lc7rE" id="oyXW5cobmI" role="3cqZAp">
+          <node concept="l9hG8" id="3iSCY2CSIVs" role="lcghm">
+            <node concept="2OqwBi" id="3iSCY2CSJ6s" role="lb14g">
+              <node concept="117lpO" id="3iSCY2CSIXj" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3iSCY2CT8yg" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
           <node concept="la8eA" id="oyXW5cobmJ" role="lcghm">
-            <property role="lacIc" value="sevseg.SetNumber(" />
+            <property role="lacIc" value=".setNumber(" />
           </node>
           <node concept="l9hG8" id="oyXW5cobmR" role="lcghm">
             <node concept="2YIFZM" id="oyXW5cobL$" role="lb14g">
@@ -935,6 +943,20 @@
           </node>
           <node concept="la8eA" id="oyXW5cobmX" role="lcghm">
             <property role="lacIc" value=");" />
+          </node>
+          <node concept="l8MVK" id="3iSCY2CSVF7" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="3iSCY2CSTKy" role="3cqZAp">
+          <node concept="l9hG8" id="3iSCY2CSUwA" role="lcghm">
+            <node concept="2OqwBi" id="3iSCY2CSUFv" role="lb14g">
+              <node concept="117lpO" id="3iSCY2CSUym" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3iSCY2CT8Ib" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3iSCY2CSUS6" role="lcghm">
+            <property role="lacIc" value=".refreshDisplay();" />
           </node>
         </node>
       </node>

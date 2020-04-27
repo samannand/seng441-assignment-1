@@ -27,16 +27,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.App:
         return new App_TextGen();
+      case LanguageConceptSwitch.Display:
+        return new Display_TextGen();
+      case LanguageConceptSwitch.DisplayAction:
+        return new DisplayAction_TextGen();
       case LanguageConceptSwitch.LED:
         return new LED_TextGen();
       case LanguageConceptSwitch.LEDAction:
         return new LEDAction_TextGen();
       case LanguageConceptSwitch.Sensor:
         return new Sensor_TextGen();
-      case LanguageConceptSwitch.SevSeg:
-        return new SevSeg_TextGen();
-      case LanguageConceptSwitch.SevSegAction:
-        return new SevSegAction_TextGen();
       case LanguageConceptSwitch.State:
         return new State_TextGen();
       case LanguageConceptSwitch.Trigger:

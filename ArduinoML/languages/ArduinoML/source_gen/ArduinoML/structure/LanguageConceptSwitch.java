@@ -12,11 +12,11 @@ public final class LanguageConceptSwitch {
   public static final int Action = 0;
   public static final int Actuator = 1;
   public static final int App = 2;
-  public static final int LED = 3;
-  public static final int LEDAction = 4;
-  public static final int Sensor = 5;
-  public static final int SevSeg = 6;
-  public static final int SevSegAction = 7;
+  public static final int Display = 3;
+  public static final int DisplayAction = 4;
+  public static final int LED = 5;
+  public static final int LEDAction = 6;
+  public static final int Sensor = 7;
   public static final int State = 8;
   public static final int Trigger = 9;
 
@@ -25,11 +25,11 @@ public final class LanguageConceptSwitch {
     builder.put(0x1eff328ee4ca8a08L, Action);
     builder.put(0x1eff328ee4ca8a0dL, Actuator);
     builder.put(0x1eff328ee4ca89f8L, App);
+    builder.put(0x79ce178c2919a962L, Display);
+    builder.put(0x622f7c14c5a6517L, DisplayAction);
     builder.put(0x622f7c14c5cbcc5L, LED);
     builder.put(0x622f7c14c5cbcceL, LEDAction);
     builder.put(0x23d3a26334f46719L, Sensor);
-    builder.put(0x79ce178c2919a962L, SevSeg);
-    builder.put(0x622f7c14c5a6517L, SevSegAction);
     builder.put(0x1eff328ee4ca8a00L, State);
     builder.put(0x23d3a26334f3149aL, Trigger);
     myIndex = builder.seal();

@@ -14,7 +14,7 @@
       <concept id="2581585558387320601" name="ArduinoML.structure.Sensor" flags="ng" index="n9WlU">
         <property id="2581585558387320604" name="pin" index="n9WlZ" />
       </concept>
-      <concept id="442188123017471255" name="ArduinoML.structure.SevSegAction" flags="ng" index="1au9bm">
+      <concept id="442188123017471255" name="ArduinoML.structure.DisplayAction" flags="ng" index="1au9bm">
         <property id="442188123017562031" name="number" index="1auj1I" />
         <reference id="442188123017624576" name="target" index="1av$J1" />
       </concept>
@@ -24,7 +24,7 @@
       <concept id="442188123017624782" name="ArduinoML.structure.LEDAction" flags="ng" index="1av$Gf">
         <reference id="442188123017624787" name="target" index="1av$Gi" />
       </concept>
-      <concept id="8776978614544083298" name="ArduinoML.structure.SevSeg" flags="ng" index="1gPVVI">
+      <concept id="8776978614544083298" name="ArduinoML.structure.Display" flags="ng" index="1gPVVI">
         <property id="8776978614544083340" name="pinD1" index="1gPVS0" />
         <property id="8776978614544083332" name="pinG" index="1gPVS8" />
         <property id="8776978614544083310" name="pinC" index="1gPVVy" />
@@ -93,7 +93,7 @@
       <property role="n9WlZ" value="10" />
     </node>
     <node concept="1gPVVI" id="oyXW5cnS2H" role="3UdrHN">
-      <property role="TrG5h" value="theSevSeg" />
+      <property role="TrG5h" value="display" />
       <property role="1gPVV_" value="1" />
       <property role="1gPVVB" value="2" />
       <property role="1gPVVy" value="3" />
@@ -111,8 +111,9 @@
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="oyXW5cnS2K" resolve="theButton" />
       </node>
-      <node concept="1au9bm" id="3iSCY2CS5ha" role="3Udryd">
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="theSevSeg" />
+      <node concept="1au9bm" id="3iSCY2CSI49" role="3Udryd">
+        <property role="1auj1I" value="0" />
+        <ref role="1av$J1" node="oyXW5cnS2H" resolve="display" />
       </node>
     </node>
     <node concept="3Udrye" id="oyXW5co85q" role="3UdrHP">
@@ -120,7 +121,7 @@
       <ref role="3Udryb" node="oyXW5cnS2v" resolve="zero" />
       <node concept="1au9bm" id="oyXW5co85x" role="3Udryd">
         <property role="1auj1I" value="1" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="theSevSeg" />
+        <ref role="1av$J1" node="oyXW5cnS2H" resolve="display" />
       </node>
       <node concept="n8brT" id="oyXW5co85$" role="n8bqX">
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />

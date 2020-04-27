@@ -258,14 +258,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Be5SKD6rpB">
-    <ref role="1XX52x" to="gb5d:7Be5SKD6q_y" resolve="SevSeg" />
+    <ref role="1XX52x" to="gb5d:7Be5SKD6q_y" resolve="Display" />
     <node concept="3EZMnI" id="7Be5SKD6rvL" role="2wV5jI">
       <node concept="2iRkQZ" id="7Be5SKD6rvM" role="2iSdaV" />
       <node concept="3EZMnI" id="7Be5SKD6rvW" role="3EZMnx">
         <node concept="l2Vlx" id="7Be5SKD6rvX" role="2iSdaV" />
         <node concept="VPM3Z" id="7Be5SKD6rvY" role="3F10Kt" />
         <node concept="3F0ifn" id="7Be5SKD6rw2" role="3EZMnx">
-          <property role="3F0ifm" value="SevSeg" />
+          <property role="3F0ifm" value="Display" />
         </node>
         <node concept="3F0A7n" id="7Be5SKD6rw7" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -362,7 +362,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="oyXW5cnS36">
-    <ref role="1XX52x" to="gb5d:oyXW5cmAkn" resolve="SevSegAction" />
+    <ref role="1XX52x" to="gb5d:oyXW5cmAkn" resolve="DisplayAction" />
     <node concept="3EZMnI" id="oyXW5cnS38" role="2wV5jI">
       <node concept="2iRfu4" id="oyXW5cnS39" role="2iSdaV" />
       <node concept="1iCGBv" id="oyXW5cnS3a" role="3EZMnx">
