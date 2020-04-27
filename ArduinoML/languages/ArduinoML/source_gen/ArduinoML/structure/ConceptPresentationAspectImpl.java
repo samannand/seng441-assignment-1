@@ -12,8 +12,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Action;
   private ConceptPresentation props_Actuator;
   private ConceptPresentation props_App;
+  private ConceptPresentation props_LED;
+  private ConceptPresentation props_LEDAction;
   private ConceptPresentation props_Sensor;
   private ConceptPresentation props_SevSeg;
+  private ConceptPresentation props_SevSegAction;
   private ConceptPresentation props_State;
   private ConceptPresentation props_Trigger;
 
@@ -25,14 +28,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Action:
         if (props_Action == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L, 0x1eff328ee4ca8a0bL, "target", "", "");
           props_Action = cpb.create();
         }
         return props_Action;
       case LanguageConceptSwitch.Actuator:
         if (props_Actuator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
           props_Actuator = cpb.create();
         }
         return props_Actuator;
@@ -43,6 +44,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
+      case LanguageConceptSwitch.LED:
+        if (props_LED == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_LED = cpb.create();
+        }
+        return props_LED;
+      case LanguageConceptSwitch.LEDAction:
+        if (props_LEDAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_LEDAction = cpb.create();
+        }
+        return props_LEDAction;
       case LanguageConceptSwitch.Sensor:
         if (props_Sensor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -57,6 +72,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SevSeg = cpb.create();
         }
         return props_SevSeg;
+      case LanguageConceptSwitch.SevSegAction:
+        if (props_SevSegAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SevSegAction = cpb.create();
+        }
+        return props_SevSegAction;
       case LanguageConceptSwitch.State:
         if (props_State == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

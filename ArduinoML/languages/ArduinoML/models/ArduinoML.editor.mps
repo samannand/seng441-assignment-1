@@ -52,11 +52,11 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2pXoyI2Sdc3">
-    <ref role="1XX52x" to="gb5d:1VZcCV$MCCd" resolve="Actuator" />
+    <ref role="1XX52x" to="gb5d:oyXW5cnbN5" resolve="LED" />
     <node concept="3EZMnI" id="2pXoyI2SmKO" role="2wV5jI">
       <node concept="3EZMnI" id="2pXoyI2SmKV" role="3EZMnx">
         <node concept="3F0ifn" id="2pXoyI2SmLG" role="3EZMnx">
-          <property role="3F0ifm" value="actuator:" />
+          <property role="3F0ifm" value="led:" />
         </node>
         <node concept="VPM3Z" id="2pXoyI2SmKX" role="3F10Kt" />
         <node concept="3F0A7n" id="2pXoyI2SmLA" role="3EZMnx">
@@ -66,7 +66,7 @@
           <property role="3F0ifm" value="on pin" />
         </node>
         <node concept="3F0A7n" id="2pXoyI2SmMq" role="3EZMnx">
-          <ref role="1NtTu8" to="gb5d:1VZcCV$MCCg" resolve="pin" />
+          <ref role="1NtTu8" to="gb5d:oyXW5cnbNc" resolve="pin" />
         </node>
         <node concept="l2Vlx" id="2pXoyI2SmL0" role="2iSdaV" />
       </node>
@@ -74,11 +74,11 @@
     </node>
   </node>
   <node concept="24kQdi" id="2pXoyI2Sdcq">
-    <ref role="1XX52x" to="gb5d:1VZcCV$MCC8" resolve="Action" />
+    <ref role="1XX52x" to="gb5d:oyXW5cnbNe" resolve="LEDAction" />
     <node concept="3EZMnI" id="2pXoyI2Sdcs" role="2wV5jI">
       <node concept="2iRfu4" id="2pXoyI2Sdcv" role="2iSdaV" />
       <node concept="1iCGBv" id="2pXoyI2SmGC" role="3EZMnx">
-        <ref role="1NtTu8" to="gb5d:1VZcCV$MCCb" resolve="target" />
+        <ref role="1NtTu8" to="gb5d:oyXW5cnbNj" resolve="target" />
         <node concept="1sVBvm" id="2pXoyI2SmGD" role="1sWHZn">
           <node concept="3F0A7n" id="2pXoyI2SmGM" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -90,7 +90,7 @@
         <property role="3F0ifm" value="&lt;=" />
       </node>
       <node concept="3F0A7n" id="2pXoyI2SmHE" role="3EZMnx">
-        <ref role="1NtTu8" to="gb5d:1VZcCV$MCC9" resolve="signal" />
+        <ref role="1NtTu8" to="gb5d:oyXW5cnbNh" resolve="signal" />
       </node>
     </node>
   </node>
@@ -184,14 +184,6 @@
           </node>
         </node>
         <node concept="l2Vlx" id="2pXoyI2SmSb" role="2iSdaV" />
-      </node>
-      <node concept="3EZMnI" id="7Be5SKD6EQi" role="3EZMnx">
-        <node concept="VPM3Z" id="7Be5SKD6EQk" role="3F10Kt" />
-        <node concept="3XFhqQ" id="7Be5SKD6EQV" role="3EZMnx" />
-        <node concept="3F1sOY" id="7Be5SKD6ER1" role="3EZMnx">
-          <ref role="1NtTu8" to="gb5d:7Be5SKD6EFM" resolve="sevseg" />
-        </node>
-        <node concept="l2Vlx" id="7Be5SKD6EQn" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="2fjCAcOXJEs" role="3EZMnx">
         <node concept="VPM3Z" id="2fjCAcOXJEu" role="3F10Kt" />
@@ -366,6 +358,27 @@
           <ref role="1NtTu8" to="gb5d:7Be5SKD6qAc" resolve="pinD1" />
         </node>
         <node concept="l2Vlx" id="7Be5SKD6rCU" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="oyXW5cnS36">
+    <ref role="1XX52x" to="gb5d:oyXW5cmAkn" resolve="SevSegAction" />
+    <node concept="3EZMnI" id="oyXW5cnS38" role="2wV5jI">
+      <node concept="2iRfu4" id="oyXW5cnS39" role="2iSdaV" />
+      <node concept="1iCGBv" id="oyXW5cnS3a" role="3EZMnx">
+        <ref role="1NtTu8" to="gb5d:oyXW5cnbK0" resolve="target" />
+        <node concept="1sVBvm" id="oyXW5cnS3b" role="1sWHZn">
+          <node concept="3F0A7n" id="oyXW5cnS3c" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="oyXW5cnS3d" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;=" />
+      </node>
+      <node concept="3F0A7n" id="oyXW5cnS3e" role="3EZMnx">
+        <ref role="1NtTu8" to="gb5d:oyXW5cmWuJ" resolve="number" />
       </node>
     </node>
   </node>

@@ -12,15 +12,18 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
   /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
+  /*package*/ final ConceptDescriptor myConceptLED = createDescriptorForLED();
+  /*package*/ final ConceptDescriptor myConceptLEDAction = createDescriptorForLEDAction();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSevSeg = createDescriptorForSevSeg();
+  /*package*/ final ConceptDescriptor myConceptSevSegAction = createDescriptorForSevSegAction();
   /*package*/ final ConceptDescriptor myConceptState = createDescriptorForState();
   /*package*/ final ConceptDescriptor myConceptTrigger = createDescriptorForTrigger();
   /*package*/ final EnumerationDescriptor myEnumerationSIGNAL = new EnumerationDescriptor_SIGNAL();
@@ -38,7 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptSensor, myConceptSevSeg, myConceptState, myConceptTrigger);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptApp, myConceptLED, myConceptLEDAction, myConceptSensor, myConceptSevSeg, myConceptSevSegAction, myConceptState, myConceptTrigger);
   }
 
   @Override
@@ -51,10 +54,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptActuator;
       case LanguageConceptSwitch.App:
         return myConceptApp;
+      case LanguageConceptSwitch.LED:
+        return myConceptLED;
+      case LanguageConceptSwitch.LEDAction:
+        return myConceptLEDAction;
       case LanguageConceptSwitch.Sensor:
         return myConceptSensor;
       case LanguageConceptSwitch.SevSeg:
         return myConceptSevSeg;
+      case LanguageConceptSwitch.SevSegAction:
+        return myConceptSevSegAction;
       case LanguageConceptSwitch.State:
         return myConceptState;
       case LanguageConceptSwitch.Trigger:
@@ -75,20 +84,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForAction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/2233559529504279048");
     b.version(2);
-    b.property("signal", 0x1eff328ee4ca8a09L).type(MetaIdFactory.dataTypeId(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x68cbc40979b00c51L)).origin("2233559529504279049").done();
-    b.associate("target", 0x1eff328ee4ca8a0bL).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL).optional(false).origin("2233559529504279051").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForActuator() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Actuator", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/2233559529504279053");
     b.version(2);
-    b.property("pin", 0x1eff328ee4ca8a10L).type(PrimitiveTypeId.INTEGER).origin("2233559529504279056").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForApp() {
@@ -104,6 +110,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("sevseg", 0x79ce178c291aaaf2L).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L).optional(true).ordered(true).multiple(false).origin("8776978614544149234").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForLED() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "LED", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L);
+    b.class_(false, false, false);
+    b.super_("ArduinoML.structure.Actuator", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017624773");
+    b.version(2);
+    b.property("pin", 0x622f7c14c5cbcccL).type(PrimitiveTypeId.INTEGER).origin("442188123017624780").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLEDAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "LEDAction", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcceL);
+    b.class_(false, false, false);
+    b.super_("ArduinoML.structure.Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017624782");
+    b.version(2);
+    b.property("signal", 0x622f7c14c5cbcd1L).type(MetaIdFactory.dataTypeId(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x68cbc40979b00c51L)).origin("442188123017624785").done();
+    b.associate("target", 0x622f7c14c5cbcd3L).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L).optional(true).origin("442188123017624787").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForSensor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Sensor", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x23d3a26334f46719L);
     b.class_(false, false, false);
@@ -116,6 +143,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForSevSeg() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "SevSeg", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L);
     b.class_(false, false, false);
+    b.super_("ArduinoML.structure.Actuator", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/8776978614544083298");
     b.version(2);
@@ -127,6 +155,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("pinF", 0x79ce178c2919a97dL).type(PrimitiveTypeId.INTEGER).origin("8776978614544083325").done();
     b.property("pinG", 0x79ce178c2919a984L).type(PrimitiveTypeId.INTEGER).origin("8776978614544083332").done();
     b.property("pinD1", 0x79ce178c2919a98cL).type(PrimitiveTypeId.INTEGER).origin("8776978614544083340").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSevSegAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "SevSegAction", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5a6517L);
+    b.class_(false, false, false);
+    b.super_("ArduinoML.structure.Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017471255");
+    b.version(2);
+    b.property("number", 0x622f7c14c5bc7afL).type(PrimitiveTypeId.INTEGER).origin("442188123017562031").done();
+    b.associate("target", 0x622f7c14c5cbc00L).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L).optional(true).origin("442188123017624576").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForState() {

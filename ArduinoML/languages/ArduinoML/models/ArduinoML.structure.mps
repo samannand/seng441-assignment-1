@@ -23,6 +23,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -126,30 +127,16 @@
   <node concept="1TIwiD" id="1VZcCV$MCC8">
     <property role="EcuMT" value="2233559529504279048" />
     <property role="TrG5h" value="Action" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1VZcCV$MCC9" role="1TKVEl">
-      <property role="IQ2nx" value="2233559529504279049" />
-      <property role="TrG5h" value="signal" />
-      <ref role="AX2Wp" node="6zbL0_TG0Lh" resolve="SIGNAL" />
-    </node>
-    <node concept="1TJgyj" id="1VZcCV$MCCb" role="1TKVEi">
-      <property role="IQ2ns" value="2233559529504279051" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1VZcCV$MCCd" resolve="Actuator" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1VZcCV$MCCd">
     <property role="EcuMT" value="2233559529504279053" />
     <property role="TrG5h" value="Actuator" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1VZcCV$MCCe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="1VZcCV$MCCg" role="1TKVEl">
-      <property role="IQ2nx" value="2233559529504279056" />
-      <property role="TrG5h" value="pin" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="25R3W" id="6zbL0_TG0Lh">
@@ -199,7 +186,7 @@
   <node concept="1TIwiD" id="7Be5SKD6q_y">
     <property role="EcuMT" value="8776978614544083298" />
     <property role="TrG5h" value="SevSeg" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1VZcCV$MCCd" resolve="Actuator" />
     <node concept="PrWs8" id="7Be5SKD6q_z" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -242,6 +229,55 @@
       <property role="IQ2nx" value="8776978614544083340" />
       <property role="TrG5h" value="pinD1" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="oyXW5cmAkn">
+    <property role="EcuMT" value="442188123017471255" />
+    <property role="TrG5h" value="SevSegAction" />
+    <ref role="1TJDcQ" node="1VZcCV$MCC8" resolve="Action" />
+    <node concept="PrWs8" id="oyXW5cmWuG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="oyXW5cmWuJ" role="1TKVEl">
+      <property role="IQ2nx" value="442188123017562031" />
+      <property role="TrG5h" value="number" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="oyXW5cnbK0" role="1TKVEi">
+      <property role="IQ2ns" value="442188123017624576" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="7Be5SKD6q_y" resolve="SevSeg" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="oyXW5cnbN5">
+    <property role="EcuMT" value="442188123017624773" />
+    <property role="TrG5h" value="LED" />
+    <ref role="1TJDcQ" node="1VZcCV$MCCd" resolve="Actuator" />
+    <node concept="PrWs8" id="oyXW5cnbN6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="oyXW5cnbNc" role="1TKVEl">
+      <property role="IQ2nx" value="442188123017624780" />
+      <property role="TrG5h" value="pin" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="oyXW5cnbNe">
+    <property role="EcuMT" value="442188123017624782" />
+    <property role="TrG5h" value="LEDAction" />
+    <ref role="1TJDcQ" node="1VZcCV$MCC8" resolve="Action" />
+    <node concept="PrWs8" id="oyXW5cnbNf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="oyXW5cnbNh" role="1TKVEl">
+      <property role="IQ2nx" value="442188123017624785" />
+      <property role="TrG5h" value="signal" />
+      <ref role="AX2Wp" node="6zbL0_TG0Lh" resolve="SIGNAL" />
+    </node>
+    <node concept="1TJgyj" id="oyXW5cnbNj" role="1TKVEi">
+      <property role="IQ2ns" value="442188123017624787" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="oyXW5cnbN5" resolve="LED" />
     </node>
   </node>
 </model>

@@ -114,7 +114,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="2pXoyI2SSbB">
-    <ref role="WuzLi" to="gb5d:1VZcCV$MCCd" resolve="Actuator" />
+    <ref role="WuzLi" to="gb5d:oyXW5cnbN5" resolve="LED" />
     <node concept="11bSqf" id="2pXoyI2SSbC" role="11c4hB">
       <node concept="3clFbS" id="2pXoyI2SSbD" role="2VODD2">
         <node concept="lc7rE" id="2pXoyI2SSbY" role="3cqZAp">
@@ -138,8 +138,8 @@
               <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
               <node concept="2OqwBi" id="2pXoyI2SSTn" role="37wK5m">
                 <node concept="117lpO" id="2pXoyI2SSFr" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2pXoyI2ST2x" role="2OqNvi">
-                  <ref role="3TsBF5" to="gb5d:1VZcCV$MCCg" resolve="pin" />
+                <node concept="3TrcHB" id="oyXW5coaum" role="2OqNvi">
+                  <ref role="3TsBF5" to="gb5d:oyXW5cnbNc" resolve="pin" />
                 </node>
               </node>
             </node>
@@ -402,7 +402,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="6zbL0_TFU$V">
-    <ref role="WuzLi" to="gb5d:1VZcCV$MCC8" resolve="Action" />
+    <ref role="WuzLi" to="gb5d:oyXW5cnbNe" resolve="LEDAction" />
     <node concept="11bSqf" id="6zbL0_TFU$W" role="11c4hB">
       <node concept="3clFbS" id="6zbL0_TFU$X" role="2VODD2">
         <node concept="lc7rE" id="6zbL0_TG8Q6" role="3cqZAp">
@@ -413,11 +413,11 @@
             <node concept="2OqwBi" id="6zbL0_TG9eB" role="lb14g">
               <node concept="2OqwBi" id="6zbL0_TG8Zx" role="2Oq$k0">
                 <node concept="117lpO" id="6zbL0_TG8SJ" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6zbL0_TG96T" role="2OqNvi">
-                  <ref role="3Tt5mk" to="gb5d:1VZcCV$MCCb" resolve="target" />
+                <node concept="3TrEf2" id="oyXW5co9Np" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gb5d:oyXW5cnbNj" resolve="target" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="6zbL0_TG9qU" role="2OqNvi">
+              <node concept="3TrcHB" id="oyXW5coa37" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
@@ -429,8 +429,8 @@
             <node concept="2OqwBi" id="6zbL0_TH$Dl" role="lb14g">
               <node concept="2OqwBi" id="6zbL0_TH$os" role="2Oq$k0">
                 <node concept="117lpO" id="6zbL0_TH$hE" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6zbL0_TH$vO" role="2OqNvi">
-                  <ref role="3TsBF5" to="gb5d:1VZcCV$MCC9" resolve="signal" />
+                <node concept="3TrcHB" id="oyXW5coa4a" role="2OqNvi">
+                  <ref role="3TsBF5" to="gb5d:oyXW5cnbNh" resolve="signal" />
                 </node>
               </node>
               <node concept="24Tkf9" id="6zbL0_TH$Lg" role="2OqNvi" />
@@ -717,7 +717,7 @@
       <node concept="3clFbS" id="7Be5SKD6VeN" role="2VODD2">
         <node concept="lc7rE" id="7Be5SKD6W3i" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD6W3C" role="lcghm">
-            <property role="lacIc" value="byte numDigits = 4;" />
+            <property role="lacIc" value="byte numDigits = 2;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD6WKw" role="lcghm" />
         </node>
@@ -855,37 +855,52 @@
         </node>
         <node concept="lc7rE" id="7Be5SKD78uN" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD78B4" role="lcghm">
-            <property role="lacIc" value="bool resistorsOnSegments = false;" />
+            <property role="lacIc" value="bool resistorsOnSegments = true" />
           </node>
           <node concept="l8MVK" id="7Be5SKD79Cs" role="lcghm" />
         </node>
         <node concept="lc7rE" id="7Be5SKD79RZ" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD7a7G" role="lcghm">
-            <property role="lacIc" value="byte hardwareConfig = COMMON_ANODE;" />
+            <property role="lacIc" value="byte hardwareConfig = COMMON_CATHODE;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD7b9H" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="7Be5SKD7bpj" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7bxE" role="lcghm">
-            <property role="lacIc" value="bool updateWith = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7dC2" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7Be5SKD7dRF" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7e05" role="lcghm">
-            <property role="lacIc" value="bool leadingZeros = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7f1p" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="7Be5SKD7fh5" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7fpy" role="lcghm">
-            <property role="lacIc" value="bool disableDecPoint = false;" />
-          </node>
-          <node concept="l8MVK" id="7Be5SKD7grP" role="lcghm" />
-        </node>
         <node concept="lc7rE" id="7Be5SKD7gF$" role="3cqZAp">
-          <node concept="la8eA" id="7Be5SKD7gO4" role="lcghm">
-            <property role="lacIc" value="sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments, updateWithDelays, leadingZeros, disableDecPoint);" />
+          <node concept="la8eA" id="oyXW5coq0Z" role="lcghm">
+            <property role="lacIc" value="sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="oyXW5cork2" role="3cqZAp">
+          <node concept="la8eA" id="oyXW5corsr" role="lcghm">
+            <property role="lacIc" value="sevseg.setBrightness(50);" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="oyXW5corzZ" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="oyXW5cob6N">
+    <ref role="WuzLi" to="gb5d:oyXW5cmAkn" resolve="SevSegAction" />
+    <node concept="11bSqf" id="oyXW5cob6O" role="11c4hB">
+      <node concept="3clFbS" id="oyXW5cob6P" role="2VODD2">
+        <node concept="lc7rE" id="oyXW5cobmI" role="3cqZAp">
+          <node concept="la8eA" id="oyXW5cobmJ" role="lcghm">
+            <property role="lacIc" value="sevseg.SetNumber(" />
+          </node>
+          <node concept="l9hG8" id="oyXW5cobmR" role="lcghm">
+            <node concept="2YIFZM" id="oyXW5cobL$" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <node concept="2OqwBi" id="oyXW5coc1k" role="37wK5m">
+                <node concept="117lpO" id="oyXW5cobN2" role="2Oq$k0" />
+                <node concept="3TrcHB" id="oyXW5cocbO" role="2OqNvi">
+                  <ref role="3TsBF5" to="gb5d:oyXW5cmWuJ" resolve="number" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="oyXW5cobmX" role="lcghm">
+            <property role="lacIc" value=");" />
           </node>
         </node>
       </node>
