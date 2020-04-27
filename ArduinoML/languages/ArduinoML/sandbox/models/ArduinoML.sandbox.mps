@@ -107,13 +107,12 @@
       <property role="TrG5h" value="zero" />
       <property role="2$BliE" value="true" />
       <ref role="3Udryb" node="oyXW5co85q" resolve="one" />
-      <node concept="1au9bm" id="oyXW5co85l" role="3Udryd">
-        <property role="1auj1I" value="0" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="theSevSeg" />
-      </node>
       <node concept="n8brT" id="oyXW5co85o" role="n8bqX">
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="oyXW5cnS2K" resolve="theButton" />
+      </node>
+      <node concept="1au9bm" id="3iSCY2CS5ha" role="3Udryd">
+        <ref role="1av$J1" node="oyXW5cnS2H" resolve="theSevSeg" />
       </node>
     </node>
     <node concept="3Udrye" id="oyXW5co85q" role="3UdrHP">

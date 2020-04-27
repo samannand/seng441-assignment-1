@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-espg90i84dr980gl52zamge34lt17b0">
+<product version="3" modelHash="-b1u7l5z51qze8au3nd5ve1159gtrsoa">
   <files dir="LED" names="LED.iso" />
+  <files dir="SevSeg" names="SevSeg.iso" />
 </product>
 

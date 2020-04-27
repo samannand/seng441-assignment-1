@@ -85,6 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAction() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
     b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/2233559529504279048");
     b.version(2);
     return b.create();
@@ -107,7 +108,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("states", 0x1eff328ee4ca89fbL).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a00L).optional(false).ordered(true).multiple(true).origin("2233559529504279035").done();
     b.aggregate("actuators", 0x1eff328ee4ca89fdL).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL).optional(false).ordered(true).multiple(true).origin("2233559529504279037").done();
     b.aggregate("sensors", 0x23d3a26334f5c109L).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x23d3a26334f46719L).optional(true).ordered(true).multiple(true).origin("2581585558387409161").done();
-    b.aggregate("sevseg", 0x79ce178c291aaaf2L).target(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L).optional(true).ordered(true).multiple(false).origin("8776978614544149234").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLED() {

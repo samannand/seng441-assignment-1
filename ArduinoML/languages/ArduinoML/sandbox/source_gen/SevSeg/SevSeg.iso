@@ -1,0 +1,38 @@
+byte numDigits = 2;
+byte digitPins[] = {8};
+byte segmentPins[] = {1, 2, 3, 4, 5, 6, 7};
+bool resistorsOnSegments = true;
+byte hardwareConfig = COMMON_CATHODE;
+sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
+sevseg.setBrightness(50);
+
+int theButton = 10;
+void state_zero() {
+  sevseg.SetNumber(0);
+  delay(1000);
+  while (true) { 
+    if ( digitalRead(theButton) == LOW ) {
+      state_one();
+    }
+  }
+}
+
+void state_one() {
+  sevseg.SetNumber(1);
+  delay(1000);
+  while (true) { 
+    if ( digitalRead(theButton) == LOW ) {
+      state_zero();
+    }
+  }
+}
+
+void setup() {
+  pinMode(theSevSeg, OUTPUT);
+  pinMode(theButton, INPUT);
+}
+
+void loop() {
+  state_zero();
+  return 0;
+}

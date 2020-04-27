@@ -5,8 +5,8 @@ package ArduinoML.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
@@ -20,12 +20,7 @@ public class App_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.sevseg$SczX) != null)) {
-      tgs.append("#include \"SevSeg.h\"");
-      tgs.newLine();
-      tgs.append("SevSeg sevseg;");
-      tgs.newLine();
-    }
+    // The if content 
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W);
       final SNode lastItem = Sequence.fromIterable(collection).last();
@@ -63,9 +58,6 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
 
-    if ((SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.sevseg$SczX) != null)) {
-      tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.sevseg$SczX));
-    }
 
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
@@ -111,7 +103,6 @@ public class App_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink sevseg$SczX = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x79ce178c291aaaf2L, "sevseg");
     /*package*/ static final SContainmentLink actuators$X79W = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fdL, "actuators");
     /*package*/ static final SContainmentLink sensors$OW5N = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x23d3a26334f5c109L, "sensors");
     /*package*/ static final SContainmentLink states$X78Y = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fbL, "states");
