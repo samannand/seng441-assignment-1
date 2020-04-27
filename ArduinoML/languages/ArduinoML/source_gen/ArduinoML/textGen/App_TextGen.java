@@ -5,15 +5,17 @@ package ArduinoML.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public class App_TextGen extends TextGenDescriptorBase {
@@ -21,16 +23,15 @@ public class App_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     // The if content 
-    {
-      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W);
-      final SNode lastItem = Sequence.fromIterable(collection).last();
-      for (SNode item : collection) {
-        tgs.appendNode(item);
-        if (item != lastItem) {
-          tgs.append("\n");
+    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
+          it;
         }
+
       }
-    }
+    });
+
     tgs.newLine();
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.sensors$OW5N);
@@ -106,6 +107,10 @@ public class App_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SContainmentLink actuators$X79W = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fdL, "actuators");
     /*package*/ static final SContainmentLink sensors$OW5N = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x23d3a26334f5c109L, "sensors");
     /*package*/ static final SContainmentLink states$X78Y = MetaAdapterFactory.getContainmentLink(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca89f8L, 0x1eff328ee4ca89fbL, "states");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept LED$j3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, "ArduinoML.structure.LED");
   }
 
   private static final class PROPS {
