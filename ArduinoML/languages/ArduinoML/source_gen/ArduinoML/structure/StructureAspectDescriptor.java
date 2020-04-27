@@ -130,7 +130,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "DisplayAction", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5a6517L);
     b.class_(false, false, false);
     b.super_("ArduinoML.structure.Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017471255");
     b.version(2);
     b.property("number", 0x622f7c14c5bc7afL).type(PrimitiveTypeId.INTEGER).origin("442188123017562031").done();
@@ -141,7 +140,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "LED", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L);
     b.class_(false, false, false);
     b.super_("ArduinoML.structure.Actuator", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017624773");
     b.version(2);
     b.property("pin", 0x622f7c14c5cbcccL).type(PrimitiveTypeId.INTEGER).origin("442188123017624780").done();
@@ -151,7 +149,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ArduinoML", "LEDAction", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcceL);
     b.class_(false, false, false);
     b.super_("ArduinoML.structure.Action", 0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a08L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6ca5d6a8-eabb-4366-950a-7442a0e145fd(ArduinoML.structure)/442188123017624782");
     b.version(2);
     b.property("signal", 0x622f7c14c5cbcd1L).type(MetaIdFactory.dataTypeId(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x68cbc40979b00c51L)).origin("442188123017624785").done();
