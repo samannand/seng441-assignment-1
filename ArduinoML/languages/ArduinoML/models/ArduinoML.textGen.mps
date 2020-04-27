@@ -715,12 +715,14 @@
     <ref role="WuzLi" to="gb5d:7Be5SKD6q_y" resolve="SevSeg" />
     <node concept="11bSqf" id="7Be5SKD6VeM" role="11c4hB">
       <node concept="3clFbS" id="7Be5SKD6VeN" role="2VODD2">
+        <node concept="1bpajm" id="5e4cH7Jt6aC" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD6W3i" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD6W3C" role="lcghm">
             <property role="lacIc" value="byte numDigits = 2;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD6WKw" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt6rp" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD6W7M" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD6WKQ" role="lcghm">
             <property role="lacIc" value="byte digitPins[] = {" />
@@ -742,6 +744,7 @@
           </node>
           <node concept="l8MVK" id="7Be5SKD70th" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt6Gc" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD70vU" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD70xm" role="lcghm">
             <property role="lacIc" value="byte segmentPins[] = {" />
@@ -853,29 +856,34 @@
           </node>
           <node concept="l8MVK" id="7Be5SKD78eD" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt7D_" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD78uN" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD78B4" role="lcghm">
-            <property role="lacIc" value="bool resistorsOnSegments = true" />
+            <property role="lacIc" value="bool resistorsOnSegments = true;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD79Cs" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt7Us" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD79RZ" role="3cqZAp">
           <node concept="la8eA" id="7Be5SKD7a7G" role="lcghm">
             <property role="lacIc" value="byte hardwareConfig = COMMON_CATHODE;" />
           </node>
           <node concept="l8MVK" id="7Be5SKD7b9H" role="lcghm" />
         </node>
+        <node concept="1bpajm" id="5e4cH7Jt8bl" role="3cqZAp" />
         <node concept="lc7rE" id="7Be5SKD7gF$" role="3cqZAp">
-          <node concept="la8eA" id="oyXW5coq0Z" role="lcghm">
+          <node concept="la8eA" id="7Be5SKD7gO4" role="lcghm">
             <property role="lacIc" value="sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);" />
           </node>
+          <node concept="l8MVK" id="5e4cH7JskIo" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="oyXW5cork2" role="3cqZAp">
-          <node concept="la8eA" id="oyXW5corsr" role="lcghm">
+        <node concept="1bpajm" id="5e4cH7Jt98O" role="3cqZAp" />
+        <node concept="lc7rE" id="5e4cH7JsiWQ" role="3cqZAp">
+          <node concept="la8eA" id="5e4cH7Jsj5f" role="lcghm">
             <property role="lacIc" value="sevseg.setBrightness(50);" />
           </node>
+          <node concept="l8MVK" id="5e4cH7Jskf2" role="lcghm" />
         </node>
-        <node concept="3clFbH" id="oyXW5corzZ" role="3cqZAp" />
       </node>
     </node>
   </node>

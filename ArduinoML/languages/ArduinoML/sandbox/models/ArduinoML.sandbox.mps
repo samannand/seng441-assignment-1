@@ -54,10 +54,6 @@
   </registry>
   <node concept="3UdrHQ" id="2pXoyI2SdbT">
     <property role="TrG5h" value="LED" />
-    <node concept="1av$G4" id="oyXW5cnDFR" role="3UdrHN">
-      <property role="TrG5h" value="theLed" />
-      <property role="1av$Gd" value="13" />
-    </node>
     <node concept="n9WlU" id="2fjCAcOXVgO" role="n9AdE">
       <property role="TrG5h" value="theButton" />
       <property role="n9WlZ" value="10" />
@@ -66,24 +62,28 @@
       <property role="TrG5h" value="on" />
       <property role="2$BliE" value="true" />
       <ref role="3Udryb" node="2pXoyI2SdbX" resolve="off" />
-      <node concept="1av$Gf" id="oyXW5cnS2o" role="3Udryd">
-        <ref role="1av$Gi" node="oyXW5cnDFR" resolve="theLed" />
-      </node>
       <node concept="n8brT" id="2fjCAcOXVgS" role="n8bqX">
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
+      </node>
+      <node concept="1av$Gf" id="oyXW5cnS2o" role="3Udryd">
+        <ref role="1av$Gi" node="oyXW5cnDFR" resolve="theLed" />
       </node>
     </node>
     <node concept="3Udrye" id="2pXoyI2SdbX" role="3UdrHP">
       <property role="TrG5h" value="off" />
       <ref role="3Udryb" node="2pXoyI2SdbU" resolve="on" />
-      <node concept="1av$Gf" id="oyXW5cnS2r" role="3Udryd">
-        <ref role="1av$Gi" node="oyXW5cnDFR" resolve="theLed" />
-      </node>
       <node concept="n8brT" id="2fjCAcOYrk8" role="n8bqX">
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
       </node>
+      <node concept="1av$Gf" id="oyXW5cnS2r" role="3Udryd">
+        <ref role="1av$Gi" node="oyXW5cnDFR" resolve="theLed" />
+      </node>
+    </node>
+    <node concept="1av$G4" id="oyXW5cnDFR" role="3UdrHN">
+      <property role="TrG5h" value="theLed" />
+      <property role="1av$Gd" value="13" />
     </node>
   </node>
   <node concept="3UdrHQ" id="oyXW5cnS2u">

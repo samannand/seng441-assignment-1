@@ -13,12 +13,15 @@ public class SevSeg_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("byte numDigits = 4;");
+    tgs.indent();
+    tgs.append("byte numDigits = 2;");
     tgs.newLine();
+    tgs.indent();
     tgs.append("byte digitPins[] = {");
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.pinD1$QfKz)));
     tgs.append("};");
     tgs.newLine();
+    tgs.indent();
     tgs.append("byte segmentPins[] = {");
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.pinA$QeQU)));
     tgs.append(", ");
@@ -35,17 +38,18 @@ public class SevSeg_TextGen extends TextGenDescriptorBase {
     tgs.append(String.valueOf(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.pinG$Qfyw)));
     tgs.append("};");
     tgs.newLine();
-    tgs.append("bool resistorsOnSegments = false;");
+    tgs.indent();
+    tgs.append("bool resistorsOnSegments = true;");
     tgs.newLine();
-    tgs.append("byte hardwareConfig = COMMON_ANODE;");
+    tgs.indent();
+    tgs.append("byte hardwareConfig = COMMON_CATHODE;");
     tgs.newLine();
-    tgs.append("bool updateWith = false;");
+    tgs.indent();
+    tgs.append("sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);");
     tgs.newLine();
-    tgs.append("bool leadingZeros = false;");
+    tgs.indent();
+    tgs.append("sevseg.setBrightness(50);");
     tgs.newLine();
-    tgs.append("bool disableDecPoint = false;");
-    tgs.newLine();
-    tgs.append("sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments, updateWithDelays, leadingZeros, disableDecPoint);");
   }
 
   private static final class PROPS {
