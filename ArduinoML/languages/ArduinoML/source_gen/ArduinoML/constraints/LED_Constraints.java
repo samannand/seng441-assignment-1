@@ -16,14 +16,14 @@ import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class Actuator_Constraints extends BaseConstraintsDescriptor {
-  public Actuator_Constraints() {
-    super(CONCEPTS.Actuator$oh);
+public class LED_Constraints extends BaseConstraintsDescriptor {
+  public LED_Constraints() {
+    super(CONCEPTS.LED$j3);
   }
 
-  public static class null_Property extends BasePropertyConstraintsDescriptor {
-    public null_Property(ConstraintsDescriptor container) {
-      super(container);
+  public static class Pin_Property extends BasePropertyConstraintsDescriptor {
+    public Pin_Property(ConstraintsDescriptor container) {
+      super(PROPS.pin$LHV_, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -32,13 +32,13 @@ public class Actuator_Constraints extends BaseConstraintsDescriptor {
     private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:9a8a9426-8907-4fdb-9992-ba8f6d99208a(ArduinoML.constraints)", "2773480884549068349");
     @Override
     public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
-      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
       if (!(result) && checkingNodeContext != null) {
         checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
       }
       return result;
     }
-    private static boolean staticValidateProperty(SNode node, String propertyValue) {
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
       return propertyValue >= 1 && propertyValue <= 13;
 
     }
@@ -46,11 +46,15 @@ public class Actuator_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(new null_Property(this));
+    properties.put(PROPS.pin$LHV_, new Pin_Property(this));
     return properties;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Actuator$oh = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x1eff328ee4ca8a0dL, "ArduinoML.structure.Actuator");
+    /*package*/ static final SConcept LED$j3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, "ArduinoML.structure.LED");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty pin$LHV_ = MetaAdapterFactory.getProperty(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, 0x622f7c14c5cbcccL, "pin");
   }
 }

@@ -8,8 +8,8 @@ sevseg.setBrightness(50);
 
 int theButton = 10;
 void state_zero() {
-  .setNumber(0);
-.refreshDisplay();
+  display.setNumber(0);
+display.refreshDisplay();
   delay(1000);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {
@@ -19,8 +19,8 @@ void state_zero() {
 }
 
 void state_one() {
-  .setNumber(1);
-.refreshDisplay();
+  display.setNumber(1);
+display.refreshDisplay();
   delay(1000);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {

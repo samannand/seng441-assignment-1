@@ -22,6 +22,7 @@
         <property id="442188123017624780" name="pin" index="1av$Gd" />
       </concept>
       <concept id="442188123017624782" name="ArduinoML.structure.LEDAction" flags="ng" index="1av$Gf">
+        <property id="442188123017624785" name="signal" index="1av$Gg" />
         <reference id="442188123017624787" name="target" index="1av$Gi" />
       </concept>
       <concept id="8776978614544083298" name="ArduinoML.structure.Display" flags="ng" index="1gPVVI">
@@ -77,7 +78,8 @@
         <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
         <ref role="n8brY" node="2fjCAcOXVgO" resolve="theButton" />
       </node>
-      <node concept="1av$Gf" id="oyXW5cnS2r" role="3Udryd">
+      <node concept="1av$Gf" id="3iSCY2CUNEr" role="3Udryd">
+        <property role="1av$Gg" value="6zbL0_TG0Lj/LOW" />
         <ref role="1av$Gi" node="oyXW5cnDFR" resolve="theLed" />
       </node>
     </node>

@@ -22,11 +22,13 @@ public class App_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    // The if content 
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.actuators$X79W)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         if (SNodeOperations.isInstanceOf(it, CONCEPTS.LED$j3)) {
-          it;
+          tgs.append("LED");
+        }
+        if (SNodeOperations.isInstanceOf(it, CONCEPTS.Display$r3)) {
+          tgs.append("Display");
         }
 
       }
@@ -111,6 +113,7 @@ public class App_TextGen extends TextGenDescriptorBase {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept LED$j3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x622f7c14c5cbcc5L, "ArduinoML.structure.LED");
+    /*package*/ static final SConcept Display$r3 = MetaAdapterFactory.getConcept(0xfdef8274844e4810L, 0xbe06dd00182a0144L, 0x79ce178c2919a962L, "ArduinoML.structure.Display");
   }
 
   private static final class PROPS {

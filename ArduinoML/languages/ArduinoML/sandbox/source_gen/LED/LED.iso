@@ -11,7 +11,7 @@ void state_on() {
 }
 
 void state_off() {
-  digitalWrite(theLed, HIGH);
+  digitalWrite(theLed, LOW);
   delay(1000);
   while (true) { 
     if ( digitalRead(theButton) == LOW ) {

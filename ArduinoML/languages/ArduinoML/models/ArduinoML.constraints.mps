@@ -111,9 +111,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="2pXoyI2SylD">
-    <ref role="1M2myG" to="gb5d:1VZcCV$MCCd" resolve="Actuator" />
+    <ref role="1M2myG" to="gb5d:oyXW5cnbN5" resolve="LED" />
     <node concept="EnEH3" id="2pXoyI2SylE" role="1MhHOB">
-      <ref role="EomxK" to="gb5d:1VZcCV$MCCg" resolve="pin" />
+      <ref role="EomxK" to="gb5d:oyXW5cnbNc" resolve="pin" />
       <node concept="QB0g5" id="2pXoyI2SyoX" role="QCWH9">
         <node concept="3clFbS" id="2pXoyI2SyoY" role="2VODD2">
           <node concept="3clFbF" id="2pXoyI2Syuc" role="3cqZAp">
