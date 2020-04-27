@@ -24,6 +24,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -122,6 +123,7 @@
     <property role="EcuMT" value="2233559529504279048" />
     <property role="TrG5h" value="Action" />
     <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3iSCY2CRyfQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -131,6 +133,7 @@
     <property role="EcuMT" value="2233559529504279053" />
     <property role="TrG5h" value="Actuator" />
     <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="actuator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3iSCY2CTbzU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

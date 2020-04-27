@@ -30,7 +30,7 @@ void state_one() {
 
 void setup() {
   byte numDigits = 2;
-  byte digitPins[] = {8, 9};
+  byte digitPins[] = {9, 8};
   byte segmentPins[] = {1, 2, 3, 4, 5, 6, 7};
   bool resistorsOnSegments = true;
   byte hardwareConfig = COMMON_CATHODE;
