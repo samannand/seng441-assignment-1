@@ -50,7 +50,63 @@ There is no required configuration for the Arduino for you to begin writing your
 ## Using the language
 
 
-TODO
+To create a model in this language, first create a new App in the sandbox. The empty application will have all the required sections for the user to write.
+
+The app can be named by typing a name after the application constant.
+<pre> <code> 
+    <b>application</b> appName
+</code>
+</pre>
+
+Actuators are defined under the actuators heading. The selectable empty line underneath the heading can be filled in with an actuator by using ctrl+space and selecting one of the actuator sub types and filling out the required input. At least one actuator must be defined.
+Further actuators are added by pressing enter after the last actuator to add a new line and ctrl+space to select a sub type.
+<pre>
+<code>
+    <b>actuators:</b>
+		<b>led</b> theLed <b>on pin</b> 13		//Define actuators here, enter to add additional actuators
+</code>
+</pre>
+
+If the user wants to use a sensor, they can replace the line "no sensors defined" with a sensor using ctrl+space. More sensors can be added with a new line and then ctrl+space.
+
+<pre>
+<code>
+    <b>sensors:</b>
+		<b>button</b> buttonName <b>on pin</b> 10		//Define sensors here, enter to add additional sensors
+</code>
+</pre>
+
+The states for the state machine are defined underneath the "states:" heading. By default an initial state is present to be filled out because the app must always have an initial state.
+To add further states the user can press enter when on the no states defined line. And similarly at the end of a state definition.
+
+<pre>
+<code>
+    <b>intial state:</b> initialStateName		//initial state defintion here
+		<b>no actions defined</b>
+		<b>transition to state</b>
+		
+	<b> no states defined</b>		//enter here to define additional states
+</code>
+</pre>
+
+The states are comprised of zero to any number of actions and a transition that can be conditional on a trigger. Actions are defined on the lines immediately after the state heading with ctrl+space and then selecting an action sub type. Further actions can be created on newlines following this.
+
+<pre>
+<code>
+    <b>intial state:</b> initialStateName
+		<b>turn on led</b> ledName			\\Add new action here, more with enter
+		<b>transition to state</b>
+</code>
+</pre>
+
+The last line of a state is the single state transition which must be defined. The next state can be filled out with ctrl+space and an optional trigger added if the transition is conditional.
+<pre>
+<code>
+    <b>intial state:</b> initialStateName
+		<b>turn on led</b> ledName
+		<b>transition to state</b> two <b>if button</b> buttonName <b>is pressed</b>		//Define transition here
+</code>
+</pre>
 
 
 ## A minimum working example
