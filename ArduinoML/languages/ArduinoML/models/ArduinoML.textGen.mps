@@ -808,7 +808,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2fjCAcOX547">
-    <ref role="WuzLi" to="gb5d:2fjCAcOWLiq" resolve="Trigger" />
+    <ref role="WuzLi" to="gb5d:20TNpAKglZv" resolve="ButtonTrigger" />
     <node concept="11bSqf" id="2fjCAcOX813" role="11c4hB">
       <node concept="3clFbS" id="2fjCAcOX814" role="2VODD2">
         <node concept="lc7rE" id="2fjCAcOX81_" role="3cqZAp">
@@ -819,11 +819,11 @@
             <node concept="2OqwBi" id="2fjCAcOX8Jn" role="lb14g">
               <node concept="2OqwBi" id="2fjCAcOX8fZ" role="2Oq$k0">
                 <node concept="117lpO" id="2fjCAcOX87a" role="2Oq$k0" />
-                <node concept="3TrEf2" id="2fjCAcOX8nz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="gb5d:2fjCAcOWLit" resolve="target" />
+                <node concept="3TrEf2" id="20TNpAKgJbB" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gb5d:20TNpAKglZy" resolve="button" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="2fjCAcOX8TD" role="2OqNvi">
+              <node concept="3TrcHB" id="20TNpAKgJr6" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
@@ -835,8 +835,8 @@
             <node concept="2OqwBi" id="2fjCAcOX9vM" role="lb14g">
               <node concept="2OqwBi" id="2fjCAcOX9e4" role="2Oq$k0">
                 <node concept="117lpO" id="2fjCAcOX969" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2fjCAcOX9lV" role="2OqNvi">
-                  <ref role="3TsBF5" to="gb5d:2fjCAcOWLir" resolve="signal" />
+                <node concept="3TrcHB" id="20TNpAKgJs9" role="2OqNvi">
+                  <ref role="3TsBF5" to="gb5d:20TNpAKglZw" resolve="signal" />
                 </node>
               </node>
               <node concept="24Tkf9" id="2fjCAcOX9C3" role="2OqNvi" />
@@ -850,7 +850,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2fjCAcOX9Pr">
-    <ref role="WuzLi" to="gb5d:2fjCAcOX6sp" resolve="Sensor" />
+    <ref role="WuzLi" to="gb5d:20TNpAKfzWV" resolve="Button" />
     <node concept="11bSqf" id="2fjCAcOX9Ps" role="11c4hB">
       <node concept="3clFbS" id="2fjCAcOX9Pt" role="2VODD2">
         <node concept="lc7rE" id="2fjCAcOXaAU" role="3cqZAp">
@@ -874,8 +874,8 @@
               <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
               <node concept="2OqwBi" id="2fjCAcOXaB3" role="37wK5m">
                 <node concept="117lpO" id="2fjCAcOXaB4" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2fjCAcOXaB5" role="2OqNvi">
-                  <ref role="3TsBF5" to="gb5d:2fjCAcOX6ss" resolve="pin" />
+                <node concept="3TrcHB" id="20TNpAKgIba" role="2OqNvi">
+                  <ref role="3TsBF5" to="gb5d:20TNpAKfzWW" resolve="pin" />
                 </node>
               </node>
             </node>

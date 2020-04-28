@@ -157,18 +157,8 @@
   <node concept="1TIwiD" id="2fjCAcOWLiq">
     <property role="EcuMT" value="2581585558387233946" />
     <property role="TrG5h" value="Trigger" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="2fjCAcOWLir" role="1TKVEl">
-      <property role="IQ2nx" value="2581585558387233947" />
-      <property role="TrG5h" value="signal" />
-      <ref role="AX2Wp" node="6zbL0_TG0Lh" resolve="SIGNAL" />
-    </node>
-    <node concept="1TJgyj" id="2fjCAcOWLit" role="1TKVEi">
-      <property role="IQ2ns" value="2581585558387233949" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2fjCAcOX6sp" resolve="Sensor" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2fjCAcOX6sp">
     <property role="EcuMT" value="2581585558387320601" />
@@ -282,6 +272,37 @@
       <property role="IQ2nx" value="2322113142856761148" />
       <property role="TrG5h" value="pin" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="20TNpAKglZv">
+    <property role="EcuMT" value="2322113142856966111" />
+    <property role="TrG5h" value="ButtonTrigger" />
+    <ref role="1TJDcQ" node="2fjCAcOWLiq" resolve="Trigger" />
+    <node concept="1TJgyi" id="20TNpAKglZw" role="1TKVEl">
+      <property role="IQ2nx" value="2322113142856966112" />
+      <property role="TrG5h" value="signal" />
+      <ref role="AX2Wp" node="20TNpAKhfQ7" resolve="BUTTON_SIGNAL" />
+    </node>
+    <node concept="1TJgyj" id="20TNpAKglZy" role="1TKVEi">
+      <property role="IQ2ns" value="2322113142856966114" />
+      <property role="20kJfa" value="button" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="20TNpAKfzWV" resolve="Button" />
+    </node>
+  </node>
+  <node concept="25R3W" id="20TNpAKhfQ7">
+    <property role="3F6X1D" value="2322113142857203079" />
+    <property role="TrG5h" value="BUTTON_SIGNAL" />
+    <ref role="1H5jkz" node="20TNpAKhfQ9" resolve="LOW" />
+    <node concept="25R33" id="20TNpAKhfQ8" role="25R1y">
+      <property role="3tVfz5" value="2322113142857203080" />
+      <property role="TrG5h" value="HIGH" />
+      <property role="1L1pqM" value="not pressed" />
+    </node>
+    <node concept="25R33" id="20TNpAKhfQ9" role="25R1y">
+      <property role="3tVfz5" value="2322113142857203081" />
+      <property role="TrG5h" value="LOW" />
+      <property role="1L1pqM" value="pressed" />
     </node>
   </node>
 </model>

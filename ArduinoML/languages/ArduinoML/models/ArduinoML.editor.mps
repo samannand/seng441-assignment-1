@@ -137,19 +137,11 @@
         <node concept="l2Vlx" id="2pXoyI2SmO5" role="2iSdaV" />
       </node>
       <node concept="35HoNQ" id="20TNpAKgbpQ" role="3EZMnx" />
-      <node concept="3EZMnI" id="2fjCAcOX4V8" role="3EZMnx">
-        <node concept="VPM3Z" id="2fjCAcOX4Va" role="3F10Kt" />
-        <node concept="3XFhqQ" id="2fjCAcOX4VI" role="3EZMnx" />
-        <node concept="3F1sOY" id="2fjCAcOX4VW" role="3EZMnx">
-          <ref role="1NtTu8" to="gb5d:2fjCAcOWLju" resolve="trigger" />
-        </node>
-        <node concept="l2Vlx" id="2fjCAcOX4Vd" role="2iSdaV" />
-      </node>
       <node concept="3EZMnI" id="2pXoyI2SmPi" role="3EZMnx">
         <node concept="VPM3Z" id="2pXoyI2SmPk" role="3F10Kt" />
         <node concept="3XFhqQ" id="2pXoyI2SmPJ" role="3EZMnx" />
         <node concept="3F0ifn" id="2pXoyI2SmPP" role="3EZMnx">
-          <property role="3F0ifm" value="going to" />
+          <property role="3F0ifm" value="transition to state" />
         </node>
         <node concept="1iCGBv" id="2pXoyI2SmQa" role="3EZMnx">
           <ref role="1NtTu8" to="gb5d:1VZcCV$MCC5" resolve="next" />
@@ -159,6 +151,9 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
+        </node>
+        <node concept="3F1sOY" id="20TNpAKglZ8" role="3EZMnx">
+          <ref role="1NtTu8" to="gb5d:2fjCAcOWLju" resolve="trigger" />
         </node>
         <node concept="l2Vlx" id="2pXoyI2SmPn" role="2iSdaV" />
       </node>
@@ -254,10 +249,13 @@
     </node>
   </node>
   <node concept="24kQdi" id="2fjCAcOWLiv">
-    <ref role="1XX52x" to="gb5d:2fjCAcOWLiq" resolve="Trigger" />
+    <ref role="1XX52x" to="gb5d:20TNpAKglZv" resolve="ButtonTrigger" />
     <node concept="3EZMnI" id="2fjCAcOWLiF" role="2wV5jI">
+      <node concept="3F0ifn" id="20TNpAKglZn" role="3EZMnx">
+        <property role="3F0ifm" value="if button:" />
+      </node>
       <node concept="1iCGBv" id="2fjCAcOWLiM" role="3EZMnx">
-        <ref role="1NtTu8" to="gb5d:2fjCAcOWLit" resolve="target" />
+        <ref role="1NtTu8" to="gb5d:20TNpAKglZy" resolve="button" />
         <node concept="1sVBvm" id="2fjCAcOWLiO" role="1sWHZn">
           <node concept="3F0A7n" id="2fjCAcOWLj3" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -270,7 +268,7 @@
         <property role="3F0ifm" value="is" />
       </node>
       <node concept="3F0A7n" id="2fjCAcOWLjn" role="3EZMnx">
-        <ref role="1NtTu8" to="gb5d:2fjCAcOWLir" resolve="signal" />
+        <ref role="1NtTu8" to="gb5d:20TNpAKglZw" resolve="signal" />
       </node>
     </node>
   </node>
