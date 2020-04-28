@@ -13,6 +13,7 @@
       <concept id="2322113142856966111" name="ArduinoML.structure.ButtonTrigger" flags="ng" index="2gu996">
         <reference id="2322113142856966114" name="button" index="2gu99V" />
       </concept>
+      <concept id="2322113142857209891" name="ArduinoML.structure.InitialState" flags="ng" index="2gvdmU" />
       <concept id="442188123017471255" name="ArduinoML.structure.DisplayAction" flags="ng" index="1au9bm">
         <property id="442188123017562031" name="number" index="1auj1I" />
         <reference id="442188123017624576" name="target" index="1av$J1" />
@@ -30,12 +31,12 @@
         <property id="1538393239983271888" name="pinD2" index="1nittg" />
       </concept>
       <concept id="2233559529504279040" name="ArduinoML.structure.State" flags="ng" index="3Udrye">
-        <property id="2773480884548941441" name="isInitial" index="2$BliE" />
         <reference id="2233559529504279045" name="next" index="3Udryb" />
         <child id="2581585558387234014" name="trigger" index="n8bqX" />
         <child id="2233559529504279043" name="actions" index="3Udryd" />
       </concept>
       <concept id="2233559529504279032" name="ArduinoML.structure.App" flags="ng" index="3UdrHQ">
+        <child id="2322113142857209892" name="initialState" index="2gvdmX" />
         <child id="2581585558387409161" name="sensors" index="n9AdE" />
         <child id="2233559529504279037" name="actuators" index="3UdrHN" />
         <child id="2233559529504279035" name="states" index="3UdrHP" />
@@ -49,26 +50,10 @@
   </registry>
   <node concept="3UdrHQ" id="oyXW5cnS2u">
     <property role="TrG5h" value="SevSeg" />
-    <node concept="3Udrye" id="20TNpAKg1DW" role="3UdrHP">
-      <property role="TrG5h" value="one" />
-      <property role="2$BliE" value="true" />
-      <ref role="3Udryb" node="20TNpAKg1DW" resolve="one" />
-      <node concept="1au9bm" id="20TNpAKg1E2" role="3Udryd">
-        <property role="1auj1I" value="1" />
-        <ref role="1av$J1" node="20TNpAKfqha" resolve="sevseg" />
-      </node>
-      <node concept="2gu996" id="20TNpAKgwjv" role="n8bqX">
-        <ref role="2gu99V" node="20TNpAKfI7y" resolve="myButton" />
-      </node>
-    </node>
-    <node concept="3Udrye" id="20TNpAKhfPU" role="3UdrHP">
+    <node concept="3Udrye" id="20TNpAKkNRT" role="3UdrHP">
       <property role="TrG5h" value="two" />
-      <ref role="3Udryb" node="20TNpAKg1DW" resolve="one" />
-      <node concept="1au9bm" id="20TNpAKhfQ3" role="3Udryd">
-        <property role="1auj1I" value="2" />
-        <ref role="1av$J1" node="20TNpAKfqha" resolve="sevseg" />
-      </node>
-      <node concept="2gu996" id="20TNpAKhfPZ" role="n8bqX">
+      <ref role="3Udryb" node="20TNpAKkNRR" resolve="one" />
+      <node concept="2gu996" id="20TNpAKkY_P" role="n8bqX">
         <ref role="2gu99V" node="20TNpAKfI7y" resolve="myButton" />
       </node>
     </node>
@@ -88,6 +73,14 @@
       <property role="1gPVS8" value="7" />
       <property role="1gPVS0" value="8" />
       <property role="1nittg" value="9" />
+    </node>
+    <node concept="2gvdmU" id="20TNpAKkNRR" role="2gvdmX">
+      <property role="TrG5h" value="one" />
+      <ref role="3Udryb" node="20TNpAKkNRT" resolve="two" />
+      <node concept="1au9bm" id="20TNpAKkNRX" role="3Udryd">
+        <property role="1auj1I" value="1" />
+        <ref role="1av$J1" node="20TNpAKfqha" resolve="sevseg" />
+      </node>
     </node>
   </node>
 </model>
