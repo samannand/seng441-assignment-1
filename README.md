@@ -63,7 +63,7 @@ Further actuators are added by pressing enter after the last actuator to add a n
 <pre>
 <code>
     <b>actuators:</b>
-	<b>led</b> theLed <b>on pin</b> 13		//Define actuators here, enter to add additional actuators
+		<b>led</b> theLed <b>on pin</b> 13		//Define actuators here, enter to add additional actuators
 </code>
 </pre>
 
@@ -72,7 +72,7 @@ If the user wants to use a sensor, they can replace the line "no sensors defined
 <pre>
 <code>
     <b>sensors:</b>
-	<b>button</b> buttonName <b>on pin</b> 10		//Define sensors here, enter to add additional sensors
+		<b>button</b> buttonName <b>on pin</b> 10		//Define sensors here, enter to add additional sensors
 </code>
 </pre>
 
@@ -82,10 +82,10 @@ To add further states the user can press enter when on the no states defined lin
 <pre>
 <code>
     <b>intial state:</b> initialStateName		//initial state defintion here
-	<b>no actions defined</b>
-	<b>transition to state</b>
+		<b>no actions defined</b>
+		<b>transition to state</b>
 		
-    <b> no states defined</b>		//enter here to define additional states
+	<b> no states defined</b>		//enter here to define additional states
 </code>
 </pre>
 
@@ -94,8 +94,8 @@ The states are comprised of zero to any number of actions and a transition that 
 <pre>
 <code>
     <b>intial state:</b> initialStateName
-	<b>turn on led</b> ledName			\\Add new action here, more with enter
-	<b>transition to state</b>
+		<b>turn on led</b> ledName			\\Add new action here, more with enter
+		<b>transition to state</b>
 </code>
 </pre>
 
@@ -103,8 +103,8 @@ The last line of a state is the single state transition which must be defined. T
 <pre>
 <code>
     <b>intial state:</b> initialStateName
-	<b>turn on led</b> ledName
-	<b>transition to state</b> two <b>if button</b> buttonName <b>is pressed</b>		//Define transition here
+		<b>turn on led</b> ledName
+		<b>transition to state</b> two <b>if button</b> buttonName <b>is pressed</b>		//Define transition here
 </code>
 </pre>
 
