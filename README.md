@@ -18,12 +18,23 @@ The MPS project directory. This directory does not present anything meaningful u
     - ArduinoML.sandbox/ArduinoML/sandbox  
     Example applications and sandbox testing area
     - ArduinoML
-        - structure
-        - editor
-        - constraints
-        - behavior
-        - typesystem
-        - textgen
+        - structure  
+        Here you will find all of the concepts of our langauge such as State, Action, Display, and so on.
+
+        - editor  
+        Here you will find how we define the syntax of our modelling language.
+
+        - constraints  
+        Here you will find a few constraints imposed on our language. This section is unfortunely quite bare, as we wanted to focus on implementing our new syntax, and did not have time to constrain the language further.
+
+        - behavior  
+        Here you will find some more behavorial logic.
+
+        - typesystem  
+        Here you will find some typesystem restraints.
+
+        - textgen  
+        Here you will see how we translate from the syntax defined usingt the structure and editor above, into arduino code. There have been some shortcuts taken in this section in the interest of time.
 
 - /Examples  
 This README contains one commented, minimum, working example as per the instructions PDF file, however this Examples directory contains some more commented working example models / applications
@@ -39,19 +50,21 @@ There is no required configuration for the Arduino for you to begin writing your
 ## Using the language
 
 
-
+TODO
 
 
 ## A minimum working example
 
+Below a minimum work example of the seven segment display implement in ArduinoML is shown. It is commented, although as our new syntax is very human readable, the comments do not actually add that much. The code is very self explanatory.
+
 
 <pre>
 <code>
-<b>application</b> minimumExample
+<b>application</b> minimumExample               // Setting application name
 
     <b>actuators:</b>
 
-        2 <b>digit display</b> sevseg
+        2 <b>digit display</b> sevseg           // Creating a seven segment display
             <b>A</b>  1
             <b>B</b>  2
             <b>C</b>  3
@@ -64,17 +77,17 @@ There is no required configuration for the Arduino for you to begin writing your
 
     <b>sensors:</b>
 
-        <b>no sensors defined</b>
+        <b>no sensors defined</b>               // No sensors for minimum example
 
     <b>states:</b>
 
-        <b>initial state</b> zero
+        <b>initial state</b> zero               // Creating an inital state
             <b>show</b> 0 <b>on display</b> sevseg
-            <b>transition to state</b> one &ltno trigger&gt
+            <b>transition to state</b> one &ltno trigger&gt     // Move to state one
 
-        <b>state</b> one
+        <b>state</b> one                        // Creating the next state
             <b>show</b> 1 <b>on display</b> sevseg
-            <b>transition to state</b> zero &ltno trigger&gt  
+            <b>transition to state</b> zero &ltno trigger&gt    // Move back to zero state
 
 </code>
 </pre>
