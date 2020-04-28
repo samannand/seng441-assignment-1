@@ -6,22 +6,12 @@ void state_one() {
   delay(1000);
   sevseg.setNumber(1);
   sevseg.refreshDisplay();
-  while (true) { 
-    sevseg.setNumber(1);
-    sevseg.refreshDisplay();
-    if ( digitalRead(myButton) == LOW ) {
-      state_two();
-    }
-  }
+  state_two();
 }
 
 void state_two() {
   delay(1000);
-  sevseg.setNumber(2);
-  sevseg.refreshDisplay();
   while (true) { 
-    sevseg.setNumber(2);
-    sevseg.refreshDisplay();
     if ( digitalRead(myButton) == LOW ) {
       state_one();
     }
