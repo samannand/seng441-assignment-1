@@ -1,6 +1,6 @@
 # SENG441 Assignment 1: ArduinoML
 
-Authors: Sam Annand (sga111), Jack Orchard (jto165)  
+Authors: Sam Annand (sga111), Jack Orchard (jco165)  
 
 This README file serves to explain the use of an Arduino modelling language created with JetBrains' MPS software.
 
@@ -40,11 +40,41 @@ There is no required configuration for the Arduino for you to begin writing your
 
 
 
+
+
 ## A minimum working example
 
 
-```
+<pre>
+<code>
+<b>application</b> minimumExample
 
-A code area
+    <b>actuators:</b>
 
-```
+        2 <b>digit display</b> sevseg
+            <b>A</b>  1
+            <b>B</b>  2
+            <b>C</b>  3
+            <b>D</b>  4
+            <b>E</b>  5
+            <b>F</b>  6
+            <b>G</b>  7
+            <b>D1</b> 8
+            <b>D2</b> 9
+
+    <b>sensors:</b>
+
+        <b>no sensors defined</b>
+
+    <b>states:</b>
+
+        <b>initial state</b> zero
+            <b>show</b> 0 <b>on display</b> sevseg
+            <b>transition to state</b> one &ltno trigger&gt
+
+        <b>state</b> one
+            <b>show</b> 1 <b>on display</b> sevseg
+            <b>transition to state</b> zero &ltno trigger&gt  
+
+</code>
+</pre>
