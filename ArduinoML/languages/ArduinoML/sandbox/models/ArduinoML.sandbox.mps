@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="fdef8274-844e-4810-be06-dd00182a0144" name="ArduinoML">
+      <concept id="2322113142856761147" name="ArduinoML.structure.Button" flags="ng" index="2g1Zay">
+        <property id="2322113142856761148" name="pin" index="2g1Za_" />
+      </concept>
       <concept id="2581585558387233946" name="ArduinoML.structure.Trigger" flags="ng" index="n8brT">
         <property id="2581585558387233947" name="signal" index="n8brS" />
         <reference id="2581585558387233949" name="target" index="n8brY" />
@@ -26,10 +29,11 @@
         <reference id="442188123017624787" name="target" index="1av$Gi" />
       </concept>
       <concept id="8776978614544083298" name="ArduinoML.structure.Display" flags="ng" index="1gPVVI">
+        <property id="2322113142856583184" name="pinA" index="2g0$m9" />
         <property id="8776978614544083340" name="pinD1" index="1gPVS0" />
         <property id="8776978614544083332" name="pinG" index="1gPVS8" />
         <property id="8776978614544083310" name="pinC" index="1gPVVy" />
-        <property id="8776978614544083305" name="pinA" index="1gPVV_" />
+        <property id="8776978614544083305" name="numDigits" index="1gPVV_" />
         <property id="8776978614544083307" name="pinB" index="1gPVVB" />
         <property id="8776978614544083325" name="pinF" index="1gPVVL" />
         <property id="8776978614544083319" name="pinE" index="1gPVVV" />
@@ -91,13 +95,38 @@
   </node>
   <node concept="3UdrHQ" id="oyXW5cnS2u">
     <property role="TrG5h" value="SevSeg" />
-    <node concept="n9WlU" id="oyXW5cnS2K" role="n9AdE">
-      <property role="TrG5h" value="theButton" />
-      <property role="n9WlZ" value="10" />
+    <node concept="3Udrye" id="20TNpAKg1DW" role="3UdrHP">
+      <property role="TrG5h" value="one" />
+      <property role="2$BliE" value="true" />
+      <node concept="1au9bm" id="20TNpAKg1E2" role="3Udryd">
+        <property role="1auj1I" value="1" />
+        <ref role="1av$J1" node="20TNpAKfqha" resolve="sevseg" />
+      </node>
+      <node concept="1av$Gf" id="20TNpAKglYX" role="3Udryd">
+        <property role="1av$Gg" value="6zbL0_TG0Lj/LOW" />
+        <ref role="1av$Gi" node="20TNpAKe_MJ" resolve="test" />
+      </node>
     </node>
-    <node concept="1gPVVI" id="oyXW5cnS2H" role="3UdrHN">
+    <node concept="2g1Zay" id="20TNpAKfI7y" role="n9AdE">
+      <property role="TrG5h" value="myButton" />
+      <property role="2g1Za_" value="10" />
+    </node>
+    <node concept="2g1Zay" id="20TNpAKglYQ" role="n9AdE">
+      <property role="TrG5h" value="anotherButton" />
+      <property role="2g1Za_" value="20" />
+    </node>
+    <node concept="1av$G4" id="20TNpAKe_MJ" role="3UdrHN">
+      <property role="TrG5h" value="test" />
+      <property role="1av$Gd" value="1" />
+    </node>
+    <node concept="1av$G4" id="20TNpAKe_MP" role="3UdrHN">
+      <property role="TrG5h" value="test2" />
+      <property role="1av$Gd" value="2" />
+    </node>
+    <node concept="1gPVVI" id="20TNpAKfqha" role="3UdrHN">
+      <property role="1gPVV_" value="2" />
       <property role="TrG5h" value="sevseg" />
-      <property role="1gPVV_" value="1" />
+      <property role="2g0$m9" value="1" />
       <property role="1gPVVB" value="2" />
       <property role="1gPVVy" value="3" />
       <property role="1gPVVY" value="4" />
@@ -106,31 +135,6 @@
       <property role="1gPVS8" value="7" />
       <property role="1gPVS0" value="8" />
       <property role="1nittg" value="9" />
-    </node>
-    <node concept="3Udrye" id="oyXW5cnS2v" role="3UdrHP">
-      <property role="TrG5h" value="zero" />
-      <property role="2$BliE" value="true" />
-      <ref role="3Udryb" node="oyXW5co85q" resolve="one" />
-      <node concept="n8brT" id="oyXW5co85o" role="n8bqX">
-        <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
-        <ref role="n8brY" node="oyXW5cnS2K" resolve="theButton" />
-      </node>
-      <node concept="1au9bm" id="3iSCY2CSI49" role="3Udryd">
-        <property role="1auj1I" value="0" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="sevseg" />
-      </node>
-    </node>
-    <node concept="3Udrye" id="oyXW5co85q" role="3UdrHP">
-      <property role="TrG5h" value="one" />
-      <ref role="3Udryb" node="oyXW5cnS2v" resolve="zero" />
-      <node concept="1au9bm" id="oyXW5co85x" role="3Udryd">
-        <property role="1auj1I" value="1" />
-        <ref role="1av$J1" node="oyXW5cnS2H" resolve="sevseg" />
-      </node>
-      <node concept="n8brT" id="oyXW5co85$" role="n8bqX">
-        <property role="n8brS" value="6zbL0_TG0Lj/LOW" />
-        <ref role="n8brY" node="oyXW5cnS2K" resolve="theButton" />
-      </node>
     </node>
   </node>
 </model>

@@ -947,7 +947,7 @@
               <node concept="2OqwBi" id="7Be5SKD71ET" role="37wK5m">
                 <node concept="117lpO" id="7Be5SKD71EU" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7Be5SKD71O2" role="2OqNvi">
-                  <ref role="3TsBF5" to="gb5d:7Be5SKD6q_D" resolve="pinA" />
+                  <ref role="3TsBF5" to="gb5d:7Be5SKD6q_D" resolve="numDigits" />
                 </node>
               </node>
             </node>

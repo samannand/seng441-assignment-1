@@ -146,12 +146,12 @@
     <node concept="25R33" id="6zbL0_TG0Li" role="25R1y">
       <property role="3tVfz5" value="7551344745192098898" />
       <property role="TrG5h" value="HIGH" />
-      <property role="1L1pqM" value="high" />
+      <property role="1L1pqM" value="on" />
     </node>
     <node concept="25R33" id="6zbL0_TG0Lj" role="25R1y">
       <property role="3tVfz5" value="7551344745192098899" />
       <property role="TrG5h" value="LOW" />
-      <property role="1L1pqM" value="low" />
+      <property role="1L1pqM" value="off" />
     </node>
   </node>
   <node concept="1TIwiD" id="2fjCAcOWLiq">
@@ -173,14 +173,10 @@
   <node concept="1TIwiD" id="2fjCAcOX6sp">
     <property role="EcuMT" value="2581585558387320601" />
     <property role="TrG5h" value="Sensor" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2fjCAcOX6sq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="2fjCAcOX6ss" role="1TKVEl">
-      <property role="IQ2nx" value="2581585558387320604" />
-      <property role="TrG5h" value="pin" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Be5SKD6q_y">
@@ -189,6 +185,11 @@
     <ref role="1TJDcQ" node="1VZcCV$MCCd" resolve="Actuator" />
     <node concept="1TJgyi" id="7Be5SKD6q_D" role="1TKVEl">
       <property role="IQ2nx" value="8776978614544083305" />
+      <property role="TrG5h" value="numDigits" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="20TNpAKeSwg" role="1TKVEl">
+      <property role="IQ2nx" value="2322113142856583184" />
       <property role="TrG5h" value="pinA" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
@@ -271,6 +272,16 @@
       <property role="IQ2ns" value="442188123017624787" />
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="oyXW5cnbN5" resolve="LED" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="20TNpAKfzWV">
+    <property role="EcuMT" value="2322113142856761147" />
+    <property role="TrG5h" value="Button" />
+    <ref role="1TJDcQ" node="2fjCAcOX6sp" resolve="Sensor" />
+    <node concept="1TJgyi" id="20TNpAKfzWW" role="1TKVEl">
+      <property role="IQ2nx" value="2322113142856761148" />
+      <property role="TrG5h" value="pin" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
