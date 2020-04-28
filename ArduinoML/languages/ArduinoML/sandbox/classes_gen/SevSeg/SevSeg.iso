@@ -1,29 +1,19 @@
 #include "SevSeg.h"
 SevSeg sevseg;
 
-int theButton = 10;
-void state_zero() {
-  delay(1000);
-  sevseg.setNumber(0);
-  sevseg.refreshDisplay();
-  while (true) { 
-    sevseg.setNumber(0);
-    sevseg.refreshDisplay();
-    if ( digitalRead(theButton) == LOW ) {
-      state_one();
-    }
-  }
-}
-
+int myButton = 10;
 void state_one() {
   delay(1000);
   sevseg.setNumber(1);
   sevseg.refreshDisplay();
+  state_two();
+}
+
+void state_two() {
+  delay(1000);
   while (true) { 
-    sevseg.setNumber(1);
-    sevseg.refreshDisplay();
-    if ( digitalRead(theButton) == LOW ) {
-      state_zero();
+    if ( digitalRead(myButton) == LOW ) {
+      state_one();
     }
   }
 }
@@ -36,10 +26,10 @@ void setup() {
   byte hardwareConfig = COMMON_CATHODE;
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
   sevseg.setBrightness(50);
-  pinMode(theButton, INPUT);
+  pinMode(myButton, INPUT);
 }
 
 void loop() {
-  state_zero();
+  state_one();
   return 0;
 }
