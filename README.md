@@ -113,6 +113,8 @@ The last line of a state is the single state transition which must be defined. T
 
 Below a minimum work example of the seven segment display implement in ArduinoML is shown. It is commented, although as our new syntax is very human readable, the comments do not actually add that much. The code is very self explanatory.
 
+More working examples can be found in the ./Examples directory
+
 
 <pre>
 <code>
